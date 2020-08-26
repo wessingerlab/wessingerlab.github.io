@@ -1,0 +1,19 @@
+name: "Wessinger Lab"
+navbar:
+  title: "Wessinger Lab Wesbite"
+  output_dir: "."
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "People"
+      href: people.html
+    - text: "Research"
+      href: research.html
+    - text: "Publications"
+      href: Publications.html
+    - text: "Join Us"
+      href: join.html
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
