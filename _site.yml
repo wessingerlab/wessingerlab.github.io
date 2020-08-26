@@ -13,7 +13,3 @@ navbar:
       href: Publications.html
     - text: "Join Us"
       href: join.html
-output:
-  html_document:
-    theme: paper
-    css: 'styles.css'
