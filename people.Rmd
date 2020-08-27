@@ -25,7 +25,7 @@ Trinity is a PhD student in the lab who will be working on...
 #### Ashley Hamilton
 
 ```{r, echo=FALSE, out.width="35%"}
-knitr::include_graphics("images/Ashley.tif")
+knitr::include_graphics("images/Ashley.tif") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
 ```
 
 
