@@ -13,3 +13,7 @@ navbar:
       href: Publications.html
     - text: "Join Us"
       href: join.html
+#output:
+#  prettydoc::html_pretty: #must have installed prettydoc package
+#    theme: leonids
+#    highlight: github
