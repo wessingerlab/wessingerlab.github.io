@@ -2,8 +2,8 @@
 title: "The Wessinger Lab"
 ---
 
-```{r, echo=FALSE, out.width="50%", fig.cap="*Penstemon cobaea* in the Konza prarie.", fig.align = 'center'}
-knitr::include_graphics("images/Penstemon.jpg")
+```{r, echo=FALSE, out.width="100%", fig.cap="A hummingbird visiting *Penstemon wrightii*.", fig.align = 'center'}
+knitr::include_graphics("images/Hummingbird_wrightii.jpg")
 ```
 
 Hello! Welcome to the Wessinger Lab website!
