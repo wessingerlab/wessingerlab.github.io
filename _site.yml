@@ -10,7 +10,7 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "Publications"
-      href: publications.html
+      href: ublications.html
     - text: "Join Us"
       href: join.html
 #output:
