@@ -17,8 +17,21 @@ Josh is PhD student in the lab who will be working on....
 
 #### Trinity Depatie
 
-Trinity is a PhD student in the lab who will be working on...
+```{r, echo=FALSE, out.width="40%", out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("images/Trinity.jpg") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
+```
 
+Trinity is a PhD student at the University of South Carolina focusing on the evolution of morphological floral traits in the Eastern Clade of the genus Penstemon. Trinity has broad interests in floral evolution, ecology, and genetics. She obtained her undergraduate degree at Florida Atlantic University’s Wilkes Honors College and later joined the Wessinger lab in the fall of 2020. Outside of the lab Trinity enjoys running and riding horses. 
+
+<br><br><br>
+
+<br><br><br>
+
+<br><br><br>
+
+<br><br><br>
+
+<br><br><br>
 
 *** 
 
