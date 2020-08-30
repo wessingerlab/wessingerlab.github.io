@@ -11,11 +11,13 @@ Carrie started her lab at the University of South Carolina in the Spring of 2020
 
 #### Josh Stevens
 
-```{r, echo=FALSE, out.width="40%", fig.cap="Josh says this picture of his puppy is a perfectly good representation of him.", out.extra='style="float:right; padding:10px"'}
+```{r, echo=FALSE, out.width="40%", out.extra='style="float:right; padding:10px"'}
 knitr::include_graphics("images/Josh_puppy.jpg") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
 ```
 
 Josh obtained his undergraduate degree at Keene State College and is now a PhD student at the University of South Carolina. Josh's research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology & bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the fall of 2020. 
+
+Josh says this picture of his puppy is a good representation of who he is as a person.
 
 <br><br><br>
 
