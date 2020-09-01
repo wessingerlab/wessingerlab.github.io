@@ -7,7 +7,7 @@ h1 {
 }
 ```
 
-```{r, echo=FALSE, out.width="30%", fig.align = 'left', out.extra='style="float:left; padding:10px"'}
+```{r, echo=FALSE, out.width="30%", fig.align = 'left', out.extra='style="float:left; padding:25px"'}
 knitr::include_graphics("images/wrightii_thin.jpg")
 ```
 <br><br>
