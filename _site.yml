@@ -17,3 +17,6 @@ navbar:
 #  prettydoc::html_pretty: #must have installed prettydoc package
 #    theme: leonids
 #    highlight: github
+output:
+  html_document:
+    css: "style.css"

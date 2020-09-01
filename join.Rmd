@@ -1,6 +1,16 @@
 ---
 title: 'Join Us!'
 ---
+```{css, echo=FALSE}
+h1 {
+  text-align: center;
+}
+```
+
+```{r, echo=FALSE, out.width="100%", fig.cap="A hummingbird visiting *Penstemon wrightii*. Photo by Josh Stevens", fig.align = 'center'}
+knitr::include_graphics("images/Hummingbird_wrightii.jpg")
+```
+
 <br><br><br>
 
 #### Undergraduate Research Opportunities

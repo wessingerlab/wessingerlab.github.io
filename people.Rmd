@@ -1,6 +1,11 @@
 ---
 title: "Lab Members"
 ---
+```{css, echo=FALSE}
+h1 {
+  text-align: center;
+}
+```
 
 #### Carolyn Wessinger 
 ###### aka **Carrie**
