@@ -7,31 +7,31 @@ h1 {
 }
 ```
 
-```{r, echo=FALSE, out.width="100%", fig.cap="A hummingbird visiting *Penstemon wrightii*. Photo by Josh Stevens", fig.align = 'center'}
-knitr::include_graphics("images/Hummingbird_wrightii.jpg")
+```{r, echo=FALSE, out.width="30%", fig.align = 'left', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("images/wrightii_thin.jpg")
 ```
-
-<br><br><br>
+<br><br>
 
 #### Undergraduate Research Opportunities
 
 Undergraduates interested in plant evolutionary biology are encouraged to inquire about research opportunities in the lab. The best time to begin undergraduate research is your sophomore year.
-<br><br><br>
+<br><br>
 
-#### Information for Prospective Graduate Students
+#### Prospective Graduate Students
 
-We are currently open to Phd or Masters students joining the lab... Resources include....
-<br><br><br>
+We are currently open to PhD or Masters students joining the lab... Resources include....
+<br><br>
 
-#### Information for Prospective Postdoctoral Fellows
+#### Prospective Postdoctoral Fellows
 
 We welcome inquiries from doctoral students interesting in pursuing postdoctoral research in the lab.
-<br><br><br>
+<br><br>
 
 ####About the University of South Carolina
 
 UofSC is located in downtown Columbia, South Carolina. The campus has a rich history and a current focus on promoting new research.
-<br><br><br>
+<br><br>
 
-You can contact me at:
+
+You can contact Carrie at:
 WESSINC@mailbox.sc.edu
