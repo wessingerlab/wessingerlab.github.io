@@ -24,7 +24,7 @@ This impressive parallel evolution in a complex trait makes *Penstemon* a fantas
 ##**What is the source of genetic variation for repeated evolution in a complex trait?**
 
 ```{r, echo=FALSE, out.width="20%", fig.cap="Ancestral character reconstruction. Blue: bee syndrome, Red: hummingbird syndrome.", out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("images/crownML.B1.asr.pdf")
+knitr::include_graphics("images/crownML.B1.asr.jpg")
 ```
 
 Our best estimate of the species tree suggests hummingbird syndrome has evolved many independent times. Perhaps this makes this trait highly genetically "accessible" in *Penstemon*. 
