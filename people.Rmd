@@ -57,4 +57,20 @@ knitr::include_graphics("images/Ashley.jpg") #if image is in wrong orientation, 
 #### Ashley Hamilton
 
 
-Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University- Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and plant evolution during a class on research methodology in the rainforests of Costa Rica. Since then, she has pursued these avenues of research passionately, conducting research on seagrass genetic diversity under Dr. Patrick Larkin and limpet biogeography under Dr. Chris Bird as well as participating in an REU looking at landscape genetics of prairie plants under Dr. Mitch Cruzan at Portland State University and another REU under Dr. Stacey Smith at the University of Colorado at Boulder investigating potential carotenoid genes associated with flower color variation in Petunieae. Currently, she working in the Wessinger Lab to understand the effect of variable herkogamy on outcrossing rates within a population of *Penstemon cobaea*. She enjoys spending her spare time rock climbing, reading, wildflower hunting, and hiking.
+Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University- Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and plant evolution during a class on research methodology in the rainforests of Costa Rica. Since then, she has pursued these avenues of research passionately, conducting research on seagrass genetic diversity under Dr. Patrick Larkin and limpet biogeography under Dr. Chris Bird as well as participating in an REU looking at landscape genetics of prairie plants under Dr. Mitch Cruzan at Portland State University and another REU under Dr. Stacey Smith at the University of Colorado at Boulder investigating potential carotenoid genes associated with flower color variation in Petunieae. Currently, she working on two projects in the Wessinger Lab: 1) understanding the effect of variable herkogamy on outcrossing rates within a population of *Penstemon cobaea* and 2) analyzing range size and niche breadth differences in *Penstemon* species with different pollination syndromes. She enjoys spending her spare time rock climbing, reading, wildflower hunting, and hiking.
+
+<br><br>
+
+*** 
+
+```{r, echo=FALSE, out.width="35%", out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("images/Nimue'.jpg") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
+```
+
+<br><br><br>
+
+<br>
+
+#### Nimue' Shive 
+
+Nimue’ Shive is an undergraduate lab assistant in the Wessinger Lab. She is a sophomore enrolled in The University of South Carolina Honors College and is majoring in Environmental Science. In the Wessinger Lab, she assists with plant care and is helping map *Penstemon* species ranges. She enjoys hiking, art, and chocolate cake.
