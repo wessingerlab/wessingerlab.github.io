@@ -2,14 +2,22 @@
 title: 'Join Us!'
 ---
 ```{css, echo=FALSE}
-h1 {
-  text-align: center;
+ html {
+   background: url(images/wrightii_thin.jpg);
+   background-size: 50%;
+   background-position: right;
+   background-repeat: no-repeat;
+ }
+
+body{
+   color: black;
+   position: relative;
+   left: 0;
+   top: 20px; 
+   width: 50%; 
 }
 ```
 
-```{r, echo=FALSE, out.width="30%", fig.align = 'left', out.extra='style="float:left; padding:25px"'}
-knitr::include_graphics("images/wrightii_thin.jpg")
-```
 <br><br>
 
 #### Undergraduate Research Opportunities

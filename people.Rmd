@@ -1,11 +1,7 @@
 ---
 title: "Lab Members"
 ---
-```{css, echo=FALSE}
-h1 {
-  text-align: center;
-}
-```
+
 
 ```{r, echo=FALSE, out.width="20%", out.extra='style="float:left; padding:10px"'}
 knitr::include_graphics("images/carrie.jpg")

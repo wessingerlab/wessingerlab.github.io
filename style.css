@@ -1,0 +1,16 @@
+/* Whole document: */
+body{
+  font-family: Helvetica;
+  font-size: 14pt;
+}
+/* Headers */
+h1 {
+  text-align: center;
+  font-size: 24pt;
+}
+h4{
+	font-size: 16pt;
+}
+/*h1,h2,h3,h4,h5,h6{
+  font-size: 24pt;
+}*/
