@@ -3,7 +3,7 @@ title: "Recent Publications"
 ---
 ```{css, echo=FALSE}
  html {
-   background: url(images/australis.jpg);
+   background: url(images/australis_new.jpg);
    background-size: 50%;
    height: 100%;
    background-position: left center;
