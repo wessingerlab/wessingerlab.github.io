@@ -1,6 +1,9 @@
 ---
-title: 'Join Us!'
+title: 'Join - Wessinger Lab'
 ---
+<br>
+
+# Join Us!
  
 ```{css, echo=FALSE}
  html {
@@ -14,12 +17,12 @@ body{
    color: black;
    position: relative;
    left: 0;
-   top: 20px; 
+   top: 10px; 
    width: 50%; 
 }
 ```
 
-<br><br>
+<br>
 
 #### Undergraduate Research Opportunities
 

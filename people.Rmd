@@ -1,7 +1,9 @@
 ---
-title: "Lab Members"
+title: "Lab Members - Wessinger Lab"
 ---
+<br>
 
+# Lab Members
 
 ```{r, echo=FALSE, out.width="40%", out.extra='style="float:left; padding:10px"'}
 knitr::include_graphics("images/carrie.jpg")
