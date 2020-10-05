@@ -1,3 +1,6 @@
+.title{
+    display: none;
+}
 /* Whole document: */
 body{
   font-family: Helvetica;

@@ -3,7 +3,7 @@ title: "Lab Members"
 ---
 
 
-```{r, echo=FALSE, out.width="20%", out.extra='style="float:left; padding:10px"'}
+```{r, echo=FALSE, out.width="40%", out.extra='style="float:left; padding:10px"'}
 knitr::include_graphics("images/carrie.jpg")
 ```
 
@@ -52,7 +52,7 @@ Trinity is a PhD student at the University of South Carolina focusing on the evo
 
 *** 
 
-```{r, echo=FALSE, out.width="35%", out.extra='style="float:right; padding:10px"'}
+```{r, echo=FALSE, out.width="40%", out.extra='style="float:right; padding:10px"'}
 knitr::include_graphics("images/Ashley.jpg") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
 ```
 
@@ -69,7 +69,7 @@ Ashley is a lab technician who graduated with a BS in Biology from Texas A&M Uni
 
 *** 
 
-```{r, echo=FALSE, out.width="35%", out.extra='style="float:left; padding:10px"'}
+```{r, echo=FALSE, out.width="40%", out.extra='style="float:left; padding:10px"'}
 knitr::include_graphics("images/Nimue'.jpg") #if image is in wrong orientation, use image editor to flip it and save as tif in the correct folder
 ```
 

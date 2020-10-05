@@ -1,6 +1,7 @@
 ---
 title: 'Join Us!'
 ---
+ 
 ```{css, echo=FALSE}
  html {
    background: url(images/wrightii_thin.jpg);
