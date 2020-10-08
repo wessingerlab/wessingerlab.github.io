@@ -3,13 +3,23 @@ title: 'Research - Wessinger Lab'
 ---
 <br>
 
+```{css, echo=FALSE}
+caption {
+  display: table-caption;
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+}
+```
+
 # Current Research
 
 Our research investigates how genetic and ecological processes at the population level contribute to larger patterns and trends in complex trait evolution, specifically parallel evolution. Currently we are exploring these issues in *Penstemon*, an emerging model system for floral evolution.
 
-```{r, echo=FALSE, out.width="25%", out.extra='style="float:right; padding:10px; text-align: right"'}
-knitr::include_graphics("images/neomex.barbatus.jpg") 
-```
+<table class="image" align="right">
+<caption align="bottom">Top picture: *P. neomexicanus*, bee syndrome. Bottom pucture: *P. barbatus*, hummingbird syndrome.</caption>
+<tr><td><img src="images/neomex.barbatus.jpg" align="right" width="250" height="300" style="padding: 10px"></td></tr>
+</table>
 
 *Penstemon* is a large North American plant genus that is ancestrally adapted to bee pollination. Flowers adapted to hummingbird pollination have repeatedly evolved (an estimated 15-20 times!) through complex change to multiple floral traits, with little evidence of evolutionary reversals back to bee syndrome. Recent macroevolutionary analyses suggest hummingbird syndrome is associated with reduced diversification rate within *Penstemon*.
 
@@ -17,15 +27,15 @@ This impressive parallel evolution in a complex trait makes *Penstemon* a fantas
 
 <br><br><br>
 
-Top picture: *P. neomexicanus*, bee syndrome. Bottom pucture: *P. barbatus*, hummingbird syndrome.
-
 ***
 
 ### **What is the source of genetic variation for repeated evolution in a complex trait?**
 
-```{r, echo=FALSE, out.width="20%", out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("images/crownML.B1.asr.jpg")
-```
+<table class="image" align="left">
+<caption align="bottom">An ancestral character reconstruction. Blue: bee syndrome Red: hummingbird syndrome.</caption>
+<tr><td><img src="images/crownML.B1.asr.jpg" align="left" width="225" height="225" style="padding: 10px"></td></tr>
+</table>
+
 
 Our best estimate of the species tree suggests hummingbird syndrome has evolved many independent times. Perhaps this makes this trait highly genetically "accessible" in *Penstemon*. 
 
@@ -37,56 +47,14 @@ Figure is an ancestral character reconstruction. Blue: bee syndrome, Red: hummin
 
 ***
 
-### **What microevolutionary processes contribute to differential diversification rates?**
-
-Does pollination by bees vs. hummingbirds structure genetic variation in different ways within and between populations across the landscape? 
-
-If so, could this affect species diversification rates, providing a link between microevolutionary processes and a macroevolutionary pattern?
-
-
-***
-
-### **Interactions between speciation and complex adaptation**
-
-Closely-related Penstemon species with alternative pollination syndromes often have at least partially overlapping distributions. How are species boundaries (and divergent floral adaptations) are maintained in the face of gene flow?
-
-***
-
-### **How do complex traits vary within populations?**
-
-```{r, echo=FALSE, out.width="50%", out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics("images/hirsutus.smallii.jpg")
-```
-
-Recent work in a bee-pollinated population found that flower shape traits are positively correlated, parallel to the direction of selection during adaptation to hummingbird pollination. *This is proof-of-concept that this approach can detect small effect loci associated with trait variation in natural populations.*
-
-What is the heritability of complex floral variation within populations and what is their effects on mating system?
-
-<br>
-
-***
 ### **Effects of trait evolution on mating system and vice versa**
 
 Recent modeling work suggests that reproductive features of populations can influence pollinator transitions. Specifically, the capacity for delayed selfing broadens the conditions where transitioning to a new pollinator such as hummingbirds is favored. This predicts transitions to hummingbird pollination may occur more frequently in self-compatible lineages. 
+
+<table class="image" align="center">
+<caption align="bottom">Closely related species *P. hirsutus* (left) and *P. smallii* (right) exhibit large floral trait differences. </caption>
+<tr><td><img src="images/hirsutus.smallii.jpg" align="center" width="500" height="225" style="padding: 10px"></td></tr>
+</table>
  
 On the flip side, does pollination by hummingbirds vs. bees impact mating system in terms of mate diversity and frequency of self-fertilization? This would affect the structure of genetic diversity within populations and may be relevant for macroevolutionary dynamics. 
 
-***
-
-#### **Additional research directions**
-```{css, echo=FALSE}
-h4 {
-  text-align: center;
-}
-```
-
-```{r, echo=FALSE, out.width="20%", out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("images/cyananthus.jpg")
-```
-```{r, echo=FALSE, out.width="35%", out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics("images/havardii.jpg")
-```
-
-##### What is the degree of morphological convergence in parallel adaptation?
-
-How convergent are hummingbird syndrome species in multivariate trait space? Do we see a single cloud of points or multiple peaks? Is shape related to the shape of ancestral bee syndrome species (suggesting adaptation along lines of least resistence?) Or can same hummingbird syndrome form be accessed from anywhere in bee syndrome morphospace? Does shape similarity correlate with history of introgression?
