@@ -322,10 +322,8 @@ $(document).ready(function () {
 <style type="text/css">
  html {
    background: url(images/virgatus_new.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-  background-size: cover;
+   background-size: cover;
+   background-attachment: fixed;
  }
 
 body {
@@ -337,6 +335,15 @@ body {
    background: rgb(0, 0, 0);
    background: rgba(211, 211, 211, .7);
 }
+
+@media screen and (max-width: 480px) {
+    html {
+     background: url(images/virgatus_thin.jpg);
+     background-size: cover;
+     background-attachement; fixed
+     background-position: center;
+     background-repeat: no-repeat;
+    }
 </style>
 <div id="wessinger-lab" class="section level1">
 <h1>Wessinger Lab</h1>
