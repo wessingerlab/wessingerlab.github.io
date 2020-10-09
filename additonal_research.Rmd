@@ -3,6 +3,22 @@ title: 'Research - Wessinger Lab'
 ---
 <br>
 
+```{css, echo=FALSE}
+caption {
+  display: table-caption;
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  table{
+    width: 100%;
+    position: center;
+  }
+}
+```
+
 #Additional Research Directions
 
 ***
