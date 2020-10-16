@@ -26,6 +26,9 @@
 	<link rel="shortcut icon" type="image/png" href="images/eatonii.png" />
 </head>
 
+<!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
+IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -275,6 +278,9 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="index.html">Home</a>
 </li>
@@ -303,9 +309,6 @@ $(document).ready(function () {
   <a href="join.html">Join Us</a>
 </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -319,9 +322,14 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
+<!--hello, this is an html comment-->
+<!--the title here NORMALLY controls the big text at the top of this webpage as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each webpage-->
+<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
 <div id="lab-members" class="section level1">
 <h1>Lab Members</h1>
+<!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+<!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
+<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,-->
 <style type="text/css">
 img {
     width:  400px;
@@ -330,26 +338,40 @@ img {
     object-fit: cover;
 }
 </style>
-<p><img src="images/carrie.jpg" align="left"></p>
-<p><br></p>
+<!-- img { -->
+<!--     width:  400px; -->
+<!--     height: 400px; -->
+<!--     padding: 10px; -->
+<!--     object-fit: cover; -->
+<!-- } -->
+<!-- in this css code block the images called within the rest of this webpage (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
+object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set hieght and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
+<p><img src="images/carrie.jpg" align="left"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the LEFT of the screen --></p>
+<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 <div id="carolyn-wessinger" class="section level4">
 <h4>Carolyn Wessinger</h4>
+<!-- 4 hastages mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 <div id="aka-carrie" class="section level6">
 <h6>aka <strong>Carrie</strong></h6>
-<p>Carrie started her lab at the University of South Carolina in the Spring of 2020. She is interested in examining microevolutionary processes that drive trait evolution and larger evolutionary patterns. Currently, she is working to study floral adaptation in the plant genus Penstemon using a genetic approach. Many projects are in collaboration with the <a href="http://www.hilemanlab.org/">Hileman Lab</a> and the <a href="http://eeb.ku.edu/sites/eeb.ku.edu/files/files/jkk/index.html">Kelly Lab</a> at the University of Kansas. She began this research during my PhD in the <a href="http://people.duke.edu/~mrausher/">Rausher Lab</a> at Duke University.</p>
+<!-- 6 hastages mean this is a header of size h6, the fourth biggest (size set in style.css)-->
+<p>Carrie started her lab at the University of South Carolina in the Spring of 2020. She is interested in examining microevolutionary processes that drive trait evolution and larger evolutionary patterns. Currently, she is working to study floral adaptation in the plant genus Penstemon using a genetic approach. Many projects are in collaboration with the <a href="http://www.hilemanlab.org/">Hileman Lab</a> and the <a href="http://eeb.ku.edu/sites/eeb.ku.edu/files/files/jkk/index.html">Kelly Lab</a> at the University of Kansas. She began this research during my PhD in the <a href="http://people.duke.edu/~mrausher/">Rausher Lab</a> at Duke University.<br />
+<!-- body text about the person (size set in style.css)--></p>
 <p><br></p>
-<p><br></p>
+<p><br> <!-- after each person I have inserted two seperated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line --></p>
 <hr />
-<p><img src="images/Josh_puppy.jpg" align="right"></p>
-<p><br></p>
+<p><img src="images/Josh_puppy.jpg" align="right"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the wesbite --></p>
+<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 </div>
 </div>
 <div id="josh-stevens" class="section level4">
 <h4>Josh Stevens</h4>
+<!-- 4 hastages mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 <p>Josh obtained his undergraduate degree at Keene State College and is now a PhD student at the University of South Carolina. Josh's research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology &amp; bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the fall of 2020.</p>
-<p>Josh says this picture of his puppy is a good representation of who he is as a person.</p>
+<p>Josh says this picture of his puppy is a good representation of who he is as a person. <!-- body text about the person (size set in style.css)--></p>
 <p><br></p>
-<p><br></p>
+<p><br> <!-- after each person I have inserted two seperated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line --></p>
 <hr />
 <p><img src="images/Trinity.jpg" align="left"></p>
 <p><br></p>

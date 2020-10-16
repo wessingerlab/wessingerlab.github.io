@@ -1,15 +1,37 @@
+/* All of the code below affects the style of every single .rmd/.html pair that makes up this website */
+
+
 .navbar-default .nav .dropdown-menu li a {
     font-size: 20px;
 }
+/* .navbar-default .nav .dropdown-menu li a {
+    font-size: 20px;
+} 
+this sets the drop down bar for the Research tab in the navbar to have both options within the dropdown have a font size of 20 pixels (approx equivalent to that of the tabs in the nav bar */
+
 
 .title{
     display: none;
 }
-/* Whole document: */
+/* .title{
+    display: none;
+}
+this sets the title set at the top of each .rmd to NOT show up in the body of the page, instead that title is ONLY shown in the browser tab that the wesbite is open in*/
+
 body{
   font-family: Helvetica;
   font-size: 14pt;
 }
+
+/*
+body{
+  font-family: Helvetica;
+  font-size: 14pt;
+}
+sets the font type and font size of the "body" (general text) of every single page of the wesbite 
+*/
+
+
 /* Headers */
 h1 {
   text-align: center;
@@ -18,10 +40,18 @@ h1 {
 h4{
 	font-size: 16pt;
 }
-/*h1,h2,h3,h4,h5,h6{
+/* h1 {
+  text-align: center;
   font-size: 24pt;
-}*/
+}
+h4{
+	font-size: 16pt;
+}
+these format the size and the alignment of the headers of class h1 (one hashtag in the .rmd) and h4 (4 hashtags in the .rmd), can format any of the others with h3{} or h5{} etc....
+*/
+
 
 /*.navbar-default .navbar-title a {
     font-size: 35px;
-}*/
+}
+this was me trying to get the title of the website to be bigger, didn't figure it out yet but pretty confident I'm on the right track*/

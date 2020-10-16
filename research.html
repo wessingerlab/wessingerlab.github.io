@@ -26,6 +26,9 @@
 	<link rel="shortcut icon" type="image/png" href="images/eatonii.png" />
 </head>
 
+<!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
+IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -275,6 +278,9 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="index.html">Home</a>
 </li>
@@ -303,9 +309,6 @@ $(document).ready(function () {
   <a href="join.html">Join Us</a>
 </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -319,7 +322,11 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
+<!--hello, this is an html comment-->
+<!--the title here NORMALLY controls the big text at the top of this webpage as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each webpage-->
+<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
+<!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
+<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,-->
 <style type="text/css">
 caption {
   display: table-caption;
@@ -333,11 +340,36 @@ caption {
     width: 100%;
     position: center;
   }
+  img{
+    align: center;
+  }
 }
 </style>
+<!-- caption { -->
+<!--   display: table-caption; -->
+<!--   text-align: left; -->
+<!--   font-size: 14px; -->
+<!--   padding: 10px; -->
+<!-- } -->
+<!-- the caption object formatted above (still in the language css) sets the style for the "captions" aka the image+caption pairs within this webpage
+display: table-caption; sets the display of any object called with the tag "caption" to be a table and a caption (the table is where we will insert the image)
+text-align: left; left aligns the text within any caption
+font-size: 14px; sets the font of the text within the image captions
+left: 0 means the body will start 0 pixels from the left of the screen (again regardless of width or other things contained withing this page as discussed above)
+padding: 10px; sets the padding to be 10px around the entire caption object (the text AND the image) -->
+<!-- @media screen and (max-width: 480px) { -->
+<!--   table{ -->
+<!--     width: 100%; -->
+<!--     position: center; -->
+<!--   } -->
+<!-- } -->
+<!-- the table object formatted above (still in the language css) sets the style for the "table" aka the image+caption pairs within this webpage when the webpage is smaller than 480 pixels (aka a phone or ipad screen)
+width: 100%; sets the entire object (image+caption) to take up 100% of the screen, ensures tha the texts isn't weirdly wrapping these images
+position: center; centers the entire object (image+caption) on the screen, BUT doesn't center the image contained witgin the table itself.... a problem that I am currently working on -->
 <div id="current-research" class="section level1">
 <h1>Current Research</h1>
-<p>Our research investigates how genetic and ecological processes at the population level contribute to larger patterns and trends in complex trait evolution, specifically parallel evolution. Currently we are exploring these issues in <em>Penstemon</em>, an emerging model system for floral evolution.</p>
+<!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+<p>Our research investigates how genetic and ecological processes at the population level contribute to larger patterns and trends in complex trait evolution, specifically parallel evolution. Currently we are exploring these issues in <em>Penstemon</em>, an emerging model system for floral evolution. <!-- body text about the general researcg of the lab (size set in style.css), the * * around a word make the word italicised--></p>
 <table class="image" align="right">
 <caption align="bottom">
 Top picture: <em>P. neomexicanus</em>, bee syndrome. Bottom pucture: <em>P. barbatus</em>, hummingbird syndrome.
@@ -348,12 +380,25 @@ Top picture: <em>P. neomexicanus</em>, bee syndrome. Bottom pucture: <em>P. barb
 </td>
 </tr>
 </table>
+<!-- <table class="image" align="right"> -->
+<!-- inserts a table of class image and aligns that table to the right (formmating corresponds to the table tag set in css above, although currently only set for when the screen size is small)-->
+<!-- <caption align="bottom">Top picture: *P. neomexicanus*, bee syndrome. Bottom pucture: *P. barbatus*, hummingbird syndrome.</caption> -->
+<!-- inserts a caption that is attached to the table inserted above (as styled by the caption tag set in css above) and aligns that caption to the bottom of the table (aka image) (the ** around a word still make the word italicised)
+the </caption> tells html that is where the caption ends -->
+<!-- <tr><td><img src="images/neomex.barbatus.jpg" align="right" width="250" height="300" style="padding: 10px"></td></tr> -->
+<!-- the tr tag means this line represents a row in the table and the td tag means this is a "daughter cell" of the table, basically these tags just say in html that this image is meant to be inserted into the table
+the <img is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir and formats it to be aligned in a certain way, have a specific hieght and width (in pixels) and a specific amount of padding
+
+</table>
+<!--  this tells the html that this is where the table object, (opened at the start with "<table" ends) -->
 <p><em>Penstemon</em> is a large North American plant genus that is ancestrally adapted to bee pollination. Flowers adapted to hummingbird pollination have repeatedly evolved (an estimated 15-20 times!) through complex change to multiple floral traits, with little evidence of evolutionary reversals back to bee syndrome. Recent macroevolutionary analyses suggest hummingbird syndrome is associated with reduced diversification rate within <em>Penstemon</em>.</p>
 <p>This impressive parallel evolution in a complex trait makes <em>Penstemon</em> a fantastic comparative system to study a variety of questions above and below the species level. We study these questions using a variety of approaches: population genomics, QTL mapping, quantitative genetics, comparative studies, phylogenetics, and modeling approaches.</p>
 <p><br><br><br></p>
+<!-- for each topic, I currently have set the image+caption (see above) then three breaks (this line) then a line (below) and then the next topic-->
 <hr />
 <div id="what-is-the-source-of-genetic-variation-for-repeated-evolution-in-a-complex-trait" class="section level3">
 <h3><strong>What is the source of genetic variation for repeated evolution in a complex trait?</strong></h3>
+<!--h3 header, 3rd biggest, size set in style.css, this is bolded as indicated by the ** ** around the words -->
 <table class="image" align="left">
 <caption align="bottom">
 An ancestral character reconstruction. Blue: bee syndrome Red: hummingbird syndrome.
@@ -364,10 +409,11 @@ An ancestral character reconstruction. Blue: bee syndrome Red: hummingbird syndr
 </td>
 </tr>
 </table>
+<!-- image +caption being set as discussed above -->
 <p>Our best estimate of the species tree suggests hummingbird syndrome has evolved many independent times. Perhaps this makes this trait highly genetically &quot;accessible&quot; in <em>Penstemon</em>.</p>
 <p>What are the relative roles of <em>de novo</em> mutations, introgression, and/or ancestral polymorphism in the repeated evolution of hummingbird syndrome traits?</p>
 <p>Data from an initial cross suggest relatively few QTLs of major effect underlie the evolution of hummingbird syndrome in this case. Are the genetic architectures and/or QTL positions similar across independent origins of hummingbird adaptation?</p>
-<p>Figure is an ancestral character reconstruction. Blue: bee syndrome, Red: hummingbird syndrome.</p>
+<p><br><br><br></p>
 <hr />
 </div>
 <div id="effects-of-trait-evolution-on-mating-system-and-vice-versa" class="section level3">

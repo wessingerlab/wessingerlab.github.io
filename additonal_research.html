@@ -26,6 +26,9 @@
 	<link rel="shortcut icon" type="image/png" href="images/eatonii.png" />
 </head>
 
+<!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
+IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -275,6 +278,9 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="index.html">Home</a>
 </li>
@@ -303,9 +309,6 @@ $(document).ready(function () {
   <a href="join.html">Join Us</a>
 </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -319,7 +322,11 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
+<!--hello, this is an html comment-->
+<!--the title here NORMALLY controls the big text at the top of this webpage as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each webpage-->
+<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
+<!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
+<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,-->
 <style type="text/css">
 caption {
   display: table-caption;
@@ -335,13 +342,37 @@ caption {
   }
 }
 </style>
+<!-- caption { -->
+<!--   display: table-caption; -->
+<!--   text-align: left; -->
+<!--   font-size: 14px; -->
+<!--   padding: 10px; -->
+<!-- } -->
+<!-- the caption object formatted above (still in the language css) sets the style for the "captions" aka the image+caption pairs within this webpage
+display: table-caption; sets the display of any object called with the tag "caption" to be a table and a caption (the table is where we will insert the image)
+text-align: left; left aligns the text within any caption
+font-size: 14px; sets the font of the text within the image captions
+left: 0 means the body will start 0 pixels from the left of the screen (again regardless of width or other things contained withing this page as discussed above)
+padding: 10px; sets the padding to be 10px around the entire caption object (the text AND the image) -->
+<!-- @media screen and (max-width: 480px) { -->
+<!--   table{ -->
+<!--     width: 100%; -->
+<!--     position: center; -->
+<!--   } -->
+<!-- } -->
+<!-- the table object formatted above (still in the language css) sets the style for the "table" aka the image+caption pairs within this webpage when the webpage is smaller than 480 pixels (aka a phone or ipad screen)
+width: 100%; sets the entire object (image+caption) to take up 100% of the screen, ensures tha the texts isn't weirdly wrapping these images
+position: center; centers the entire object (image+caption) on the screen, BUT doesn't center the image contained witgin the table itself.... a problem that I am currently working on -->
 <div id="additional-research-directions" class="section level1">
 <h1>Additional Research Directions</h1>
+<!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 <hr />
+<!-- a line -->
 <div id="what-microevolutionary-processes-contribute-to-differential-diversification-rates" class="section level3">
 <h3><strong>What microevolutionary processes contribute to differential diversification rates?</strong></h3>
+<!-- h3, header 3, bolded by the ** ** surrounding it, done for each of the research topics-->
 <p>Does pollination by bees vs. hummingbirds structure genetic variation in different ways within and between populations across the landscape?</p>
-<p>If so, could this affect species diversification rates, providing a link between microevolutionary processes and a macroevolutionary pattern?</p>
+<p>If so, could this affect species diversification rates, providing a link between microevolutionary processes and a macroevolutionary pattern? <!-- plain body text about the research topic in the h3 header above, followed by a line and the next header and so on --></p>
 <hr />
 </div>
 <div id="interactions-between-speciation-and-complex-adaptation" class="section level3">
@@ -367,6 +398,17 @@ caption {
 </td>
 </tr>
 </table>
+<!-- <table class="image" align="right"> -->
+<!-- inserts a table of class image and aligns that table to the right (formmating corresponds to the table tag set in css above, although currently only set for when the screen size is small)-->
+<!-- <caption align="bottom">*P. eatonii* exhibits hummingbird floral syndrome.</caption>
+<!-- inserts a caption that is attached to the table inserted above (as styled by the caption tag set in css above) and aligns that caption to the bottom of the table (aka image) (the ** around a word still make the word italicised)
+the </caption> tells html that is where the caption ends -->
+<!-- <tr><td><img src="images/atonii.png.jpg" align="left" width="200" height="150" style="padding: 10px"></td></tr> -->
+<!-- the tr tag means this line represents a row in the table and the td tag means this is a "daughter cell" of the table, basically these tags just say in html that this image is meant to be inserted into the table
+the <img is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir and formats it to be aligned in a certain way, have a specific hieght and width (in pixels) and a specific amount of padding
+
+</table>
+<!--  this tells the html that this is where the table object, (opened at the start with "<table" ends) -->
 <table class="image" align="right">
 <caption align="bottom">
 <em>P. barbatus</em> also exhibits hummingbird floral syndrome.
@@ -377,6 +419,7 @@ caption {
 </td>
 </tr>
 </table>
+<!-- a second table like the one just desbirbed -->
 <p>How convergent are hummingbird syndrome species in multivariate trait space? Do we see a single cloud of points or multiple peaks? Is shape related to the shape of ancestral bee syndrome species (suggesting adaptation along lines of least resistence?) Or can same hummingbird syndrome form be accessed from anywhere in bee syndrome morphospace? Does shape similarity correlate with history of introgression?</p>
 </div>
 </div>
