@@ -9,10 +9,10 @@ navbar:
       href: people.html
     - text: "Research"
       menu: 
-      - text: Current Research
+      - text: "Current Research"
         href: research.html
-      - text: Additional Research Directions
-        href: additonal_research.html
+      - text: "Additional Research Directions"
+        href: additional_research.html
     - text: "Publications"
       href: publications.html
     - text: "Join Us"

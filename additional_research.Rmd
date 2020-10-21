@@ -52,7 +52,7 @@ width: 100%; sets the entire object (image+caption) to take up 100% of the scree
 position: center; centers the entire object (image+caption) on the screen, BUT doesn't center the image contained witgin the table itself.... a problem that I am currently working on -->
 
 
-#Additional Research Directions
+# Additional Research Directions
 <!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 
 ***
