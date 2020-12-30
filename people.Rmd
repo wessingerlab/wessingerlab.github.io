@@ -43,7 +43,7 @@ align="left" aligns this image to the LEFT of the screen -->
 ###### aka **Carrie**
 <!-- 6 hastages mean this is a header of size h6, the fourth biggest (size set in style.css)-->
 
-Carrie started her lab at the University of South Carolina in the Spring of 2020. She is interested in examining microevolutionary processes that drive trait evolution and larger evolutionary patterns. Currently, she is working to study floral adaptation in the plant genus Penstemon using a genetic approach. Many projects are in collaboration with the [Hileman Lab](http://www.hilemanlab.org/) and the [Kelly Lab](http://eeb.ku.edu/sites/eeb.ku.edu/files/files/jkk/index.html) at the University of Kansas. She began this research during my PhD in the [Rausher Lab](http://people.duke.edu/~mrausher/) at Duke University.  
+Carrie started the lab at the University of South Carolina in the Spring of 2020. She earned her BS in Biology from Brown University where she gained an appreciation for organismal and evolutionary biology. She then worked with Mark Rausher at Duke University for her PhD and worked with Lena Hileman (and John Kelly) at the University of Kansas for her postdoc, all current collaborators. She is fascinated by the phenomenon of parallel evolution. Outside of work, she loves exploring the natural beauty of South Carolina and in general can't wait for the next field season! 
 <!-- body text about the person (size set in style.css)-->
 
 <br>
