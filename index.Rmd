@@ -110,7 +110,7 @@ the body formatting here is also largerly the same except there is a smaller dis
 
 Hello! Welcome!
 
-The Wessinger lab is located at the [University of South Carolina Department of Biological Sciences](https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php). We are a collaborative and supportive group of researchers studying population genetic processes contributing to adaptive evolution. Our current favorite study system is Penstemon, an emerging model system for studying parallel evolution.
+The Wessinger lab is located at the [University of South Carolina Department of Biological Sciences](https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php). We are a collaborative and supportive group of researchers studying population genetic processes contributing to adaptive evolution. Our primary study system is Penstemon, an emerging model system for studying convergent / parallel evolution.
 
 <!-- the text above is all normal body text which is styled first by the css formatting contained within this webpage as discussed above (currently formats placement, background color) and second by the formatting contained in the style.css (currently formats font type and font size)-->
 <!--note the [] encase a set of words that are hyperlinked by the following link contained within the () -->

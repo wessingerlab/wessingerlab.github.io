@@ -58,11 +58,18 @@ position: center; centers the entire object (image+caption) on the screen, BUT d
 # Current Research
 <!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 
-Our research investigates how genetic and ecological processes at the population level contribute to larger patterns and trends in complex trait evolution, specifically parallel evolution. Currently we are exploring these issues in *Penstemon*, an emerging model system for floral evolution.
-<!-- body text about the general researcg of the lab (size set in style.css), the * * around a word make the word italicised-->
+#### ***How do complex adaptations rapidly - and repeatedly - evolve during species radiations?***
+
+We seek to understand how genetic and ecological processes generate and maintain trait diversity. We are primarily exploring these issues in *Penstemon*, an enigmatic comparative system for studying complex trait evolution. Our work developing *Penstemon* as a model for evolutionary genetics is collaborative with [Lena Hileman](http://www.hilemanlab.org/), [John Kelly](https://eeb.ku.edu/john-kelly), [Mark Rausher](http://people.duke.edu/~mrausher/), and [Kate Ostevik](https://www.kateostevik.com/).
+
+<br><br><br>
+
+***
+
+<!-- body text about the general research of the lab (size set in style.css), the * * around a word make the word italicised-->
 
 <table class="image" align="right">
-<caption align="bottom">Top picture: *P. neomexicanus*, bee syndrome. Bottom pucture: *P. barbatus*, hummingbird syndrome.</caption>
+<caption align="bottom">Top: Bee-adapted species. Bottom: hummingbird-adapted species.</caption>
 <tr><td><img src="images/neomex.barbatus.jpg" align="right" width="250" height="300" style="padding: 10px"></td></tr>
 </table>
 
@@ -80,9 +87,11 @@ the <img is html that calls the container "img" (styled above in css) and fills 
 </table>
 <!--  this tells the html that this is where the table object, (opened at the start with "<table" ends) -->
 
-*Penstemon* is a large North American plant genus that is ancestrally adapted to bee pollination. Flowers adapted to hummingbird pollination have repeatedly evolved (an estimated 15-20 times!) through complex change to multiple floral traits, with little evidence of evolutionary reversals back to bee syndrome. Recent macroevolutionary analyses suggest hummingbird syndrome is associated with reduced diversification rate within *Penstemon*.
+### **Exceptional convergent evolution in *Penstemon* **
 
-This impressive parallel evolution in a complex trait makes *Penstemon* a fantastic comparative system to study a variety of questions above and below the species level. We study these questions using a variety of approaches: population genomics, QTL mapping, quantitative genetics, comparative studies, phylogenetics, and modeling approaches.
+In the North American wildflower genus *Penstemon*, evolutionary transitions from bee to hummingbird pollination have occurred in an estimated 20+ lineages through changes to a complex of floral traits. Recent macroevolutionary analyses suggest that transitions to hummingbird pollination are associated with reduced diversification rates and that reverse transitions back to bee pollination are rare.
+
+We view *Penstemon* as an exceptional comparative system to study fundamental evolutionary genetics questions, using approaches such as population genomics, quantitative genetics, comparative studies, phylogenomics, and modeling. 
 
 <br><br><br>
 
@@ -90,34 +99,50 @@ This impressive parallel evolution in a complex trait makes *Penstemon* a fantas
 
 ***
 
-### **What is the source of genetic variation for repeated evolution in a complex trait?**
+### **What is the source of genetic variation for widespread convergent evolution?**
 <!--h3 header, 3rd biggest, size set in style.css, this is bolded as indicated by the ** ** around the words -->
 
 <table class="image" align="left">
-<caption align="bottom">An ancestral character reconstruction. Blue: bee syndrome Red: hummingbird syndrome.</caption>
+<caption align="bottom">Ancestral character reconstruction. Blue: bee syndrome Red: hummingbird syndrome.</caption>
 <tr><td><img src="images/crownML.B1.asr.jpg" align="left" width="225" height="225" style="padding: 10px"></td></tr>
 </table>
 
 <!-- image +caption being set as discussed above -->
 
-Our best estimate of the species tree suggests hummingbird syndrome has evolved many independent times. Perhaps this makes this trait highly genetically "accessible" in *Penstemon*. 
-
-What are the relative roles of *de novo* mutations, introgression, and/or ancestral polymorphism in the repeated evolution of hummingbird syndrome traits?
-
-Data from an initial cross suggest relatively few QTLs of major effect underlie the evolution of hummingbird syndrome in this case. Are the genetic architectures and/or QTL positions similar across independent origins of hummingbird adaptation?
+Hummingbird-adapted flowers have evolved a surprising number of times in separate bee-adapted lineages! This suggest the "hummingbird syndrome" strategy is often favored by selection and that these traits are genetically accessible to populations. Does standing variation or gene flow act as a source of adaptive alleles? In theory, adaptive introgression could bypass the waiting times for *de novo* mutations that generate adaptive change in complex traits. We are using whole genome resequencing and phylogenomic approaches to address whether hummingbird-adapted species share a history of introgression in genome regions that specify floral traits.
 
 <br><br><br>
 
 ***
 
-### **Effects of trait evolution on mating system and vice versa**
+### **What is the genetic architecture of complex traits?**
 
-Recent modeling work suggests that reproductive features of populations can influence pollinator transitions. Specifically, the capacity for delayed selfing broadens the conditions where transitioning to a new pollinator such as hummingbirds is favored. This predicts transitions to hummingbird pollination may occur more frequently in self-compatible lineages. 
+A critical goal of evolutionary genetics is to characterize the types of mutations that contribute to adaptive trait variation. We are using QTL approaches to examine the genetic basis of repeated shifts to hummingbird pollination using replicate QTL mapping populations. What components of parallel phenotypic evolution occur through similar genetic changes?
+
+In addition, we are studying the ecological function and genetic basis of ***personate flowers*** within *Penstemon*, suing field studies and QTL mapping. Personate flowers are dorso-ventrally flattened, impeding pollinator visitation relative to open tubular flowers. Personate flowers have arisen at least twice within *Penstemon*, suggesting they have adaptive significance. However, little is known about how and why this interesting flower shape has evolved!
 
 <table class="image" align="center">
-<caption align="bottom">Closely related species *P. hirsutus* (left) and *P. smallii* (right) exhibit large floral trait differences. </caption>
+<caption align="bottom">Personate flowers (left) and open tubular flowers (right). </caption>
 <tr><td><img src="images/hirsutus.smallii.jpg" align="center" width="500" height="225" style="padding: 10px"></td></tr>
 </table>
  
-On the flip side, does pollination by hummingbirds vs. bees impact mating system in terms of mate diversity and frequency of self-fertilization? This would affect the structure of genetic diversity within populations and may be relevant for macroevolutionary dynamics. 
+***
 
+### **How do complex adaptations arise within populations? How are they maintained in the face of gene flow?**
+
+Evolutionary divergence in complex traits begins with local adaptation within populations. Determining the consequences of gene flow for population-level adaptation is a critical goal of evolutionary genetics. A major challenge is understanding how complex trait differences are maintained in recently diverged taxa. We are using population genomic approaches to examine the heritabiity of complex adaptations within populations and to determine how complex trait differences are maintained in the face of gene flow. We are focused on recently diverged pairs of sister species that differ in floral syndrome and show evidence of gene flow where species ranges overlap.
+
+<table class="image" align="center">
+<tr><td><img src="images/jonesii.jpg" align="center" height="225" style="padding: 10px"></td></tr>
+</table>
+
+***
+
+### **The effects of mating system on adaptation**
+
+
+<table class="image" align="left">
+<tr><td><img src="images/modeling.jpg" align="left" height="225" style="padding: 10px"></td></tr>
+</table>
+
+Mating system has fundamental effects on the genetics of populations, including the fate of new beneficial alleles. Adaptation to a new pollinator may - in effect - alter patterns of pollen dispersal within and among populations, with effects on population isolation, local adaptation, and the occurrence of hybridization. We are studying the consequences of pollination system on mating events and population sturcture, which may have relevance for macroevolutionary dynamics.

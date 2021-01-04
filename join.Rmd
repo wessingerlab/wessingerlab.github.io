@@ -120,19 +120,22 @@ background: rgba(211, 211, 211, .5); sets the backgrund of the body to be a ligh
 #### Undergraduate Research Opportunities
 <!--h4 header, 4rd biggest, size set in style.css, this is consistent for all headers below-->
 
-Undergraduates interested in plant evolutionary biology are encouraged to inquire about research opportunities in the lab. The best time to begin undergraduate research is your sophomore year.
+Undergraduates interested in plant evolutionary biology are encouraged to inquire about research opportunities in the lab. The best time to begin undergraduate research is your sophomore year. Please reach out to Carrie with a statement of research interests.
+
 <br><br>
 <!--actual body of the page, formatted first by the body{} objects set above in the css block and second by the the style.css
 body is followed by 2 breaks together, same is trye for all sections below just to keep formatting consitent-->
 
 #### Prospective Graduate Students
 
-We are currently open to PhD or Masters students joining the lab... Resources include....
+For prospective graduate students interested in population genetics and evolution, please send Carrie a CV and a description of your research interests (and how working with us would help you meet these interests).
+
 <br><br>
 
 #### Prospective Postdoctoral Fellows
 
-We welcome inquiries from doctoral students interesting in pursuing postdoctoral research in the lab.
+We welcome inquiries from doctoral students interesting in pursuing postdoctoral research in the lab, particularly those with strong population genetics backgrounds. Please email Carrie a CV, a description of research interests and goals for postdoctoral training, and a description of your background and experience. Postdoctoral positions are contingent on current funding, but Carrie is always open to brainstorming a fellowship proposal (e.g., NSF / NIH).
+
 <br><br>
 
 #### About the University of South Carolina
