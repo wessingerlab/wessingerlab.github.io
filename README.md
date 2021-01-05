@@ -22,10 +22,9 @@ the _site.yml controls the creation of the tabs within the navigation bar (all t
     under right: each href:/text: pair represents a tab within the navbar, the title: is the title of that tab as it appears in the navbar, the href: controls the name of the file used as a reference to create the content within that tab (these are the same as the name of all of the .Rmds just with a .html at the end and control the actual name of the link to that webpage ex: https://wessingerlab.github.io/additional_research.html is from the additional_research.html which is made from knitting the additional_research.Rmd)
   under output: there are 2 files right now 1) the style.css is in charge of base formatting for all web pages that are created, this is coded in css and has annotations within it to explain what the css does and 2) header.html which controls the formatting of the favicon (the icon that represents the lab wesbite in the tab of the wesbite, in your history and in your favoirtes bar)
 
-the wesbite was loading very slowly so I evalutaed it with https://tools.pingdom.com/ and found that a large portion of the problem was the number and size of the images we used. my solution to this was to reduce the image size to at MOST 1MB without losing image quality using [jpegoptim](https://www.omgubuntu.co.uk/2016/03/how-to-optimize-jpeg-command-line-linux) (installed on the lab computer), the code I ran was 
-
+the website was loading very slowly so I evaluated it with https://tools.pingdom.com/ and found that a large portion of the problem was the number and size of the images we used. my solution to this was to reduce the image size of most images to at MOST 500MB without losing image quality using [jpegoptim](https://www.omgubuntu.co.uk/2016/03/how-to-optimize-jpeg-command-line-linux) (installed on the lab computer).. to ensure you don't over compress (the image will become super pixelated), copy all original images to another place before trying to edit them in your working dir
 ```{R, echo=TRUE}
-jpegoptim --size=1000k path_to_wessingerlab.github.io/images/image_name.jpg
+jpegoptim --size=500k path_to_wessingerlab.github.io/images/image_name.jpg
 ```
   
 if R crashes and you can no longer push origin (with error "index.lock already exists") use
