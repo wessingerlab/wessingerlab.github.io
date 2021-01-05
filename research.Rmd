@@ -65,9 +65,11 @@ position: center; centers the entire object (image+caption) on the screen, BUT d
 
 We seek to understand how genetic and ecological processes generate and maintain trait diversity. We are primarily exploring these issues in *Penstemon*, an enigmatic comparative system for studying complex trait evolution. Our work developing *Penstemon* as a model for evolutionary genetics is collaborative with [Lena Hileman](http://www.hilemanlab.org/), [John Kelly](https://eeb.ku.edu/john-kelly), [Mark Rausher](http://people.duke.edu/~mrausher/), and [Kate Ostevik](https://www.kateostevik.com/).
 
-<br><br>
+<br>
 
 ***
+
+### **Exceptional convergent evolution in *Penstemon* **
 
 <!-- body text about the general research of the lab (size set in style.css), the * * around a word make the word italicized-->
 
@@ -89,8 +91,6 @@ the <img is html that calls the container "img" (styled above in css) and fills 
 
 </table>
 <!--  this tells the html that this is where the table object, (opened at the start with "<table" ends) -->
-
-### **Exceptional convergent evolution in *Penstemon* **
 
 In the North American wildflower genus *Penstemon*, evolutionary transitions from bee to hummingbird pollination have occurred in an estimated 20+ lineages through changes to a complex of floral traits. Recent macroevolutionary analyses suggest that transitions to hummingbird pollination are associated with reduced speciation rates and that reversals back to bee pollination are rare.
 
