@@ -19,7 +19,7 @@
 
 .navbar-default {
     background-color: white;
-    border-color: white;
+    border-color: grey;
 }
  /* .navbar-default {
     background-color: white; turns all but the home button of the navbar the specified color
