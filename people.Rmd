@@ -43,7 +43,7 @@ object-fit: cover;" defines how the actual image fits within the image container
 Carrie started the lab at the University of South Carolina in the Spring of 2020. She earned her BS in Biology from Brown University where she gained an appreciation for organismal and evolutionary biology. She then worked with Mark Rausher at Duke University for her PhD and worked with Lena Hileman (and John Kelly) at the University of Kansas for her postdoc, all current collaborators. She is fascinated by the phenomenon of parallel evolution. Outside of work, she loves exploring the natural beauty of South Carolina and in general can't wait for the next field season! 
 <!-- body text about the person (size set in style.css)-->
 
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/carriewessi"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @carriewessi
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/carriewessi"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [carriewessi](https://www.twitter.com/carriewessi)
 
 <br>
 
@@ -65,7 +65,7 @@ Josh obtained his undergraduate degree at Keene State College and is now a PhD s
 Josh says this picture of his puppy is a good representation of who he is as a person.
 <!-- body text about the person (size set in style.css)-->
 
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/JoshuaTEStevens"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @JoshuaTEStevens
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/JoshuaTEStevens"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [JoshuaTEStevens](https://www.twitter.com/JoshuaTEStevens)
 
 <br>
 
@@ -79,7 +79,7 @@ Josh says this picture of his puppy is a good representation of who he is as a p
 
 Trinity is a PhD student at the University of South Carolina focusing on the evolution of morphological floral traits in the Eastern Clade of the genus Penstemon. Trinity has broad interests in floral evolution, ecology, and genetics. She obtained her undergraduate degree at Florida Atlantic University’s Wilkes Honors College and later joined the Wessinger lab in the fall of 2020. Outside of the lab Trinity enjoys running and riding horses. 
 
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @TrinityDepatie
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [TrinityDepatie](https://www.twitter.com/TrinityDepatie)
 
 <br>
 
@@ -96,7 +96,7 @@ Trinity is a PhD student at the University of South Carolina focusing on the evo
 
 Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University-Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and evolution during an undergrad course. Since then, she has pursued these avenues of research passionately, conducting research on a variety of organisms from limpets to seagrass. Currently, she working on several projects in the Wessinger Lab including analyzing morphological traits and geographic variables to try to understand underlying evolutionary processes at both the population and species level within *Penstemon*.
 
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @botanic_ash
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [botanic_ash](https://www.twitter.com/botanic_ash)
 
 <br>
 

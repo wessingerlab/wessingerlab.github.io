@@ -1,6 +1,5 @@
 name: "Wessinger Lab"
 navbar:
-  title: "Wessinger Lab Website"
   output_dir: "."
   right:
     - text: "Home"
