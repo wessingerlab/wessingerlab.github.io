@@ -20,9 +20,9 @@ within each .Rmd there are notes describing what the code is doing within html c
 the _site.yml controls the creation of the tabs within the navigation bar (all text under navbar:) at the top of the website and the formatting of the output html files(under output:).
   under navbar: the title corresponds to the text at the right hand side and is the title of the **website on the navbar** (this is different than the actual title of the website which is controlled by the name: command above the navbar command)
     under right: each href:/text: pair represents a tab within the navbar, the title: is the title of that tab as it appears in the navbar, the href: controls the name of the file used as a reference to create the content within that tab (these are the same as the name of all of the .Rmds just with a .html at the end and control the actual name of the link to that webpage ex: https://wessingerlab.github.io/additional_research.html is from the additional_research.html which is made from knitting the additional_research.Rmd)
-  under output: there are 2 files right now 1) the style.css is in charge of base formatting for all webpages that are created, this is coded in css and has annotations within it to explain what the css does and 2) header.html which controls the formatting of the favicon (the icon that represents the lab wesbite in the tab of the wesbite, in your history and in your favoirtes bar)
+  under output: there are 2 files right now 1) the style.css is in charge of base formatting for all web pages that are created, this is coded in css and has annotations within it to explain what the css does and 2) header.html which controls the formatting of the favicon (the icon that represents the lab wesbite in the tab of the wesbite, in your history and in your favoirtes bar)
   
-if R crashes and you can no longer push origin (with error "index.lock already exuists") use
+if R crashes and you can no longer push origin (with error "index.lock already exists") use
 
 ```{R, echo=TRUE}
 rm -rf path_to_wessingerlab.github.io/.git/index.lock
