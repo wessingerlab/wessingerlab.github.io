@@ -123,7 +123,7 @@ In addition, we are studying the ecological function and genetic basis of ***per
 
 <table class="image" align="center">
 <caption align="bottom">Personate flowers (left) and open tubular flowers (right). </caption>
-<tr><td><img src="images/hirsutus.smallii.jpg" align="center" width="500" height="225" style="padding: 10px"></td></tr>
+<tr><td><img src="images/hirsutus.smallii.jpg" align="center" width="500" style="padding: 10px"></td></tr>
 </table>
  
 ***
