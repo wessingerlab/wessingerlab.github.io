@@ -2,14 +2,14 @@
 title: 'Research - Wessinger Lab'
 ---
 <!--hello, this is an html comment--> 
-<!--the title here NORMALLY controls the big text at the top of this webpage as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each webpage--> 
+<!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page--> 
 <br>
 <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
 <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
 
 
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
-<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,--> 
+<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing exactly as it appears within the block,--> 
 ```{css, echo=FALSE}
 caption {
   display: table-caption;
@@ -51,13 +51,13 @@ padding: 10px; sets the padding to be 10px around the entire caption object (the
 <!--   } -->
 <!-- } -->
 
-<!-- the table object formatted above (still in the language css) sets the style for the "table" aka the image+caption pairs within this webpage when the webpage is smaller than 480 pixels (aka a phone or ipad screen)
-width: 100%; sets the entire object (image+caption) to take up 100% of the screen, ensures tha the texts isn't weirdly wrapping these images
-position: center; centers the entire object (image+caption) on the screen, BUT doesn't center the image contained witgin the table itself.... a problem that I am currently working on -->
+<!-- the table object formatted above (still in the language css) sets the style for the "table" aka the image+caption pairs within this web page when the web page is smaller than 480 pixels (aka a phone or ipad screen)
+width: 100%; sets the entire object (image+caption) to take up 100% of the screen, ensures that the texts isn't weirdly wrapping these images
+position: center; centers the entire object (image+caption) on the screen, BUT doesn't center the image contained within the table itself.... a problem that I am currently working on -->
 
 
 # Current Research
-<!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+<!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 
 <br>
 
@@ -69,7 +69,7 @@ We seek to understand how genetic and ecological processes generate and maintain
 
 ***
 
-<!-- body text about the general research of the lab (size set in style.css), the * * around a word make the word italicised-->
+<!-- body text about the general research of the lab (size set in style.css), the * * around a word make the word italicized-->
 
 <table class="image" align="right">
 <caption align="bottom">Top: Bee-adapted species. Bottom: hummingbird-adapted species.</caption>
@@ -77,15 +77,15 @@ We seek to understand how genetic and ecological processes generate and maintain
 </table>
 
 <!-- <table class="image" align="right"> -->
-<!-- inserts a table of class image and aligns that table to the right (formmating corresponds to the table tag set in css above, although currently only set for when the screen size is small)-->
+<!-- inserts a table of class image and aligns that table to the right (formatting corresponds to the table tag set in css above, although currently only set for when the screen size is small)-->
 
 <!-- <caption align="bottom">Top picture: *P. neomexicanus*, bee syndrome. Bottom pucture: *P. barbatus*, hummingbird syndrome.</caption> -->
-<!-- inserts a caption that is attached to the table inserted above (as styled by the caption tag set in css above) and aligns that caption to the bottom of the table (aka image) (the ** around a word still make the word italicised)
+<!-- inserts a caption that is attached to the table inserted above (as styled by the caption tag set in css above) and aligns that caption to the bottom of the table (aka image) (the ** around a word still make the word italicized)
 the </caption> tells html that is where the caption ends -->
 
 <!-- <tr><td><img src="images/neomex.barbatus.jpg" align="right" width="250" height="300" style="padding: 10px"></td></tr> -->
 <!-- the tr tag means this line represents a row in the table and the td tag means this is a "daughter cell" of the table, basically these tags just say in html that this image is meant to be inserted into the table
-the <img is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir and formats it to be aligned in a certain way, have a specific hieght and width (in pixels) and a specific amount of padding
+the <img is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir and formats it to be aligned in a certain way, have a specific height and width (in pixels) and a specific amount of padding
 
 </table>
 <!--  this tells the html that this is where the table object, (opened at the start with "<table" ends) -->
