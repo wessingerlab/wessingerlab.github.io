@@ -12,28 +12,25 @@ title: "Lab Members - Wessinger Lab"
 
 
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
-<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,--> 
-```{css, echo=FALSE}
-img {
-    width:  400px;
-    height: 400px;
-    padding: 10px;
-    object-fit: cover;
-}
-```
+<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,--> 
+<!-- ```{css, echo=FALSE}
 <!-- img { -->
 <!--     width:  400px; -->
 <!--     height: 400px; -->
 <!--     padding: 10px; -->
 <!--     object-fit: cover; -->
 <!-- } -->
-<!-- in this css code block the images called within the rest of this webpage (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
-object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set hieght and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
+<!-- in this css code block the images called within the rest of this web page (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
+object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
+<!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
 
-
-<img src="images/carrie.jpg" align="left">
+<img src="images/carrie.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
 <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
-align="left" aligns this image to the LEFT of the screen -->
+align="left" aligns this image to the LEFT of the screen 
+height=400px and width=400px means a square with a height and width of 400 pixels each
+style = everything that follows after this is css code 
+"padding: 10px; gives 10 pixels of padding around it the image 
+object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently-->
 
 <br>
 <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
@@ -42,20 +39,20 @@ align="left" aligns this image to the LEFT of the screen -->
 <!-- 4 hastages mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 ###### aka **Carrie**
 <!-- 6 hastages mean this is a header of size h6, the fourth biggest (size set in style.css)-->
-Twitter: @carriewessi
 
 Carrie started the lab at the University of South Carolina in the Spring of 2020. She earned her BS in Biology from Brown University where she gained an appreciation for organismal and evolutionary biology. She then worked with Mark Rausher at Duke University for her PhD and worked with Lena Hileman (and John Kelly) at the University of Kansas for her postdoc, all current collaborators. She is fascinated by the phenomenon of parallel evolution. Outside of work, she loves exploring the natural beauty of South Carolina and in general can't wait for the next field season! 
 <!-- body text about the person (size set in style.css)-->
 
-<br>
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/carriewessi"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @carriewessi
 
 <br>
-<!-- after each person I have inserted two seperated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
+
+<!-- after each person I have inserted two separated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
 
 ***
-<img src="images/Josh_puppy.jpg" align="right">
+<img src="images/Josh_puppy.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
 <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
-align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the wesbite -->
+align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
 
 <br>
 <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
@@ -68,14 +65,13 @@ Josh obtained his undergraduate degree at Keene State College and is now a PhD s
 Josh says this picture of his puppy is a good representation of who he is as a person.
 <!-- body text about the person (size set in style.css)-->
 
-<br>
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/JoshuaTEStevens"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @JoshuaTEStevens
 
 <br>
-<!-- after each person I have inserted two seperated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
 
 ***
 
-<img src="images/Trinity.jpg" align="left">
+<img src="images/Trinity.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
 
 <br>
 
@@ -83,8 +79,7 @@ Josh says this picture of his puppy is a good representation of who he is as a p
 
 Trinity is a PhD student at the University of South Carolina focusing on the evolution of morphological floral traits in the Eastern Clade of the genus Penstemon. Trinity has broad interests in floral evolution, ecology, and genetics. She obtained her undergraduate degree at Florida Atlantic University’s Wilkes Honors College and later joined the Wessinger lab in the fall of 2020. Outside of the lab Trinity enjoys running and riding horses. 
 
-
-<br>
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @TrinityDepatie
 
 <br>
 
@@ -92,21 +87,21 @@ Trinity is a PhD student at the University of South Carolina focusing on the evo
 
 *** 
 
-<img src="images/Ashley.jpg" align="right">
+<img src="images/Ashley.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
 
 <br>
 
 #### Ashley Hamilton
 
 
-Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University- Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and plant evolution during a class on research methodology in the rainforests of Costa Rica. Since then, she has pursued these avenues of research passionately, conducting research on a variety of organsims from limpets to seagrass. Currently, she working on several projects in the Wessinger Lab including analyzing morphological traits and geographic varaibles to try to understand underlying evolutionary processes at both the population and species level within *Penstemon*.
+Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University-Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and evolution during an undergrad course. Since then, she has pursued these avenues of research passionately, conducting research on a variety of organisms from limpets to seagrass. Currently, she working on several projects in the Wessinger Lab including analyzing morphological traits and geographic variables to try to understand underlying evolutionary processes at both the population and species level within *Penstemon*.
 
-<br>
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> @botanic_ash
 
 <br>
 
 *** 
-<img src="images/Nimue'.jpg" align="left">
+<img src="images/Nimue'.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
   
 <br>
 
@@ -126,7 +121,7 @@ Nimue’ Shive is an undergraduate lab assistant in the Wessinger Lab. She is a 
 <br>
 
 *** 
-<img src="images/clay.jpg" align="right">
+<img src="images/clay.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 

@@ -9,7 +9,7 @@ navbar:
       href: people.html
     - text: "Current Research"
       href: research.html
-    - text: "Publications"
+    - text: "Recent Publications"
       href: publications.html
     - text: "Join Us"
       href: join.html

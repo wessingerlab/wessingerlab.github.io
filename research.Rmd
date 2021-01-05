@@ -16,6 +16,7 @@ caption {
   text-align: left;
   font-size: 14px;
   padding: 10px;
+  color: black;
 }
 
 @media screen and (max-width: 480px) {
@@ -57,6 +58,8 @@ position: center; centers the entire object (image+caption) on the screen, BUT d
 
 # Current Research
 <!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+
+<br>
 
 #### ***How do complex adaptations rapidly - and repeatedly - evolve during species radiations?***
 
@@ -111,7 +114,7 @@ We view *Penstemon* as an exceptional comparative system to study fundamental ev
 
 Hummingbird-adapted flowers have evolved a surprising number of times in separate bee-adapted lineages! This suggest the "hummingbird syndrome" strategy is often favored by selection and is genetically accessible to populations. Does standing variation or gene flow act as a source of adaptive alleles? In theory, adaptive introgression could bypass the waiting times for relevant *de novo* mutations. We are using whole genome resequencing and phylogenomic approaches to address whether hummingbird-adapted species share a history of introgression in genome regions that specify floral traits.
 
-<br><br><br>
+<br><br><br><br>
 
 ***
 

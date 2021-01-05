@@ -291,7 +291,7 @@ $(document).ready(function () {
   <a href="research.html">Current Research</a>
 </li>
 <li>
-  <a href="publications.html">Publications</a>
+  <a href="publications.html">Recent Publications</a>
 </li>
 <li>
   <a href="join.html">Join Us</a>
@@ -311,27 +311,27 @@ $(document).ready(function () {
 
 
 <!--hello, this is an html comment-->
-<!--the title here NORMALLY controls the big text at the top of this webpage as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each webpage-->
+<!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page-->
 <p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
 <div id="recent-publications" class="section level1">
 <h1>Recent Publications</h1>
-<!-- header 1, aka the large font that is centered at the top of the webpage, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+<!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
-<!--note: no coments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,-->
+<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing exactly as it appears within the block,-->
 <style type="text/css">
  html {
    background: url(images/australis_new.jpg);
    background-size: 50%;
    height: 100%;
+   background-attachment: fixed;
    background-position: left center;
    background-repeat: no-repeat;
  }
 
 body{
    color: black;
-   position: fixed;
-   right: 0;
-   bottom: 0
+   position: relative;
+   float:right;
    top: 20px;
    width: 50%;
 }
@@ -353,27 +353,28 @@ body{
 }
 </style>
 <!-- ```{css, echo=FALSE} -->
-<p><!-- html { --> <!--   background: url(images/australis_new.jpg);  --> <!--   background-size: 50%; --> <!--   height: 100%; --> <!--   background-position: left center; --> <!--   background-repeat: no-repeat; --> <!-- } --></p>
-<!-- the html object formatted above (still in the language css) sets the background image used for this webpage 
+<p><!-- html { --> <!--   background: url(images/australis_new.jpg);  --> <!--   background-size: 50%; --> <!--   height: 100%; --> <!--   background-attachment: fixed; --> <!--   background-position: left center; --> <!--   background-repeat: no-repeat; --> <!-- } --></p>
+<!-- the html object formatted above (still in the language css) sets the background image used for this web page 
 #IMP the image is dynamically scaling when set this way meaning it's size and what is show changes when you change your browser/screen size
 the url() command tells the computer where this image is currently located compared to the director the rproj is in so it's in a folder called images and the image itself is called virgatus_new.jpg
 background-size: 50%; is what makes this image cover the half of the width of the screen
-height: 100%; ensure the image takes up 100% of the screen hieght
+height: 100%; ensure the image takes up 100% of the screen height
+background-attachment: fixed ensures that when you scroll for text, the image does not move
 background-position: left center; centers the image vertically and moves it to the left horizontally
 background-repeat: no-repeat; means if the screen is too big that the image can't take up the whole thing, don't repeat the image
 
 <!-- body { -->
 <!--    color: black; -->
-<!--    position: fixed;  -->
-<!--    right: 0;  -->
-<!--    bottom: 0;  -->
+<!--    position: relative;  -->
+<!--    float: right;  -->
 <!--    top: 20px; -->
 <!--    width: 50%;  -->
 <!-- } -->
-<!--the body object formatted above (still in the language css) sets the style for the "body" aka the actual text within this webpage
-#IMP: this body is set here because it is different than the way we generally want the body formatted in the other pages, if it was something that we wanted on all of the pages then we would set it witin the style.css
+<!--the body object formatted above (still in the language css) sets the style for the "body" aka the actual text within this web page
+#IMP: this body is set here because it is different than the way we generally want the body formatted in the other pages, if it was something that we wanted on all of the pages then we would set it within the style.css
 color: sets the color of the text
-position: fixed sets the position to be the same regardless of screen width and the position of other things contained within the page (like images)
+position: relative sets the position to change relative to where it initially would be, this is formatted by the next line... 
+float: right; makes the relative position of the text to be floating (not fixed so it will be scroll-able) to the right of where the body would normally be be
 right: 0  and bottom: 0 means the body will start 0 pixels from the right and bottom of the screen (again regardless of width or other things contained withing this page as discussed above) aka will be right justified
 top: 20 px means the body will start 20 pixels down from the top of the screen (again regardless of width or other things contained withing this page as discussed above)
 width: 50% sets the width of the body to cover half of the width of the screen-->
@@ -394,26 +395,35 @@ width: 50% sets the width of the body to cover half of the width of the screen--
 <!-- } -->
 <!-- @media screen and (max-width: 480px): this block changes the settings that were discussed above to be different if the screen size is smaller than 480 pixels in width aka on phones/ipads because the formatting as it was looked super bad on phones before
 
-you can check what this looks like after knitting this webpage by narrowing your screen until it shifts into the different formattng
+you can check what this looks like after knitting this webpage by narrowing your screen until it shifts into the different formatting
 
 the html{} object is formatted to be different than  the default for bigger screens that was discussed above, because having an image take up half of a small screen is not very readable SO:
-<!-- the html object formatted above (still in the language css) sets the background image used for this webpage 
+<!-- the html object formatted above (still in the language css) sets the background image used for this web page 
 #IMP the image is dynamically scaling when set this way meaning it's size and what is show changes when you change your browser/screen size
 the url() command tells the computer where this image is currently located compared to the director the rproj is in so it's in a folder called images and the image itself is called australis_new.jpg
 background-position: center; just centers the image vertically and horizontally within the screen
 background-repeat: no-repeat; means if the screen is too big that the image can't take up the whole thing, don't repeat the image
 background-size: cover is what makes this image cover the entire width of the screen
 background-attachment: fixed; is kind of complicated but means that is there is enough text that the screen needs to scroll, keep the image fixed in it's place aka don't scroll with the text -->
-<!--the body{} object formatted above (still in the language css) sets the style for the "body" aka the actual text within this webpage
+<!--the body{} object formatted above (still in the language css) sets the style for the "body" aka the actual text within this web page
 #IMP: this body is set here because it is different than the way we generally want the body formatted in the other pages, if it was something that we wanted on all of the pages then we would set it within the style.css
 color: sets the color of the text
 left: 0 means the body will start 0 pixels from the left of the screen (again regardless of width or other things contained withing this page as discussed above)
 width: 100% sets the width of the body to cover 100% of the width of the screen
-background: rgba(211, 211, 211, .7); sets the backgrund of the body to be a light grey (hex code 211, 211, 211) with an alpha (transparency) value of .5 (50% opaque) -->
+background: rgba(211, 211, 211, .7); sets the background of the body to be a light grey (hex code 211, 211, 211) with an alpha (transparency) value of .5 (50% opaque) -->
 <p><br></p>
-<!-- below are publications in order from most recent to less recent with the actual publication hyperlinked within the jounral name, Carrie's name is bolded-->
+<!-- below are publications in order from most recent to less recent with the actual publication hyperlinked within the journal name, Carrie's name is bolded-->
+<p><strong>Wessinger, C. A.</strong> (2020). From pollen dispersal to plant diversification: genetic consequences of pollination mode. <a href="https://doi.org/10.1111/nph.17073">New Phytologist.</a></p>
+<p><br></p>
+<p><strong>Wessinger, C. A.</strong>, &amp; Hileman, L. C. (2020). Parallelism in flower evolution and development. <a href="https://doi.org/10.1146/annurev-ecolsys-011720-124511">Annual Review of Ecology, Evolution, and Systematics, 51, 387-408.</a></p>
+<p><br></p>
 <p>Katzer, A. M., <strong>Wessinger, C. A.</strong>, &amp; Hileman, L. C. (2019). Nectary size is a pollination syndrome trait in Penstemon. <a href="https://doi.org/10.1111/nph.15769">New Phytologist, 223(1), 377-384.</a></p>
+<p><br></p>
 <p><strong>Wessinger, C. A.</strong>, Rausher, M. D., &amp; Hileman, L. C. (2019). Adaptation to hummingbird pollination is associated with reduced diversification in Penstemon. <a href="https://doi.org/10.1002/evl3.130">Evolution letters, 3(5), 521-533.</a></p>
+<p><br></p>
+<p><strong>Wessinger, C. A.</strong>, Kelly, J. K., Jiang, P., Rausher, M. D., &amp; Hileman, L. C. (2018). SNP‐skimming: A fast approach to map loci generating quantitative variation in natural populations. <a href="https://doi.org/10.1111/1755-0998.12930">Molecular ecology resources, 18(6), 1402-1414.</a></p>
+<p><br></p>
+<p><strong>Wessinger, C. A.</strong>, &amp; Kelly, J. K. (2018). Selfing can facilitate transitions between pollination syndromes. <a href="https://doi.org/10.1086/696856">The American Naturalist, 191(5), 582-594.</a></p>
 </div>
 
 
