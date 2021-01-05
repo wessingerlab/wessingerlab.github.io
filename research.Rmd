@@ -130,7 +130,7 @@ In addition, we are studying the ecological function and genetic basis of ***per
 
 ### **How do complex adaptations arise within populations? How are they maintained in the face of gene flow?**
 
-Evolutionary change in complex traits begins with local adaptation within populations. A major challenge is understanding how complex trait divergence are maintained in recently diverged taxa that experience gene flow. We are using population genomic approaches to examine the heritability of complex adaptations within populations and to determine how complex trait differences are maintained in the face of gene flow. We are focused on recently diverged pairs of sister species that differ in floral syndrome and show evidence of gene flow where species ranges overlap.
+Evolutionary change in complex traits begins with local adaptation within populations. A major challenge is understanding how complex trait differences are maintained in recently diverged taxa that experience gene flow. We are using population genomic approaches to examine the heritability of complex adaptations within populations and to determine the consequences of gene flow on species differentiation. We are focused on recently diverged pairs of sister species that differ in floral syndrome and show evidence of gene flow where species ranges overlap.
 
 <table class="image" align="center">
 <tr><td><img src="images/jonesii.jpg" align="center" width="500" style="padding: 10px"></td></tr>
