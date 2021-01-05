@@ -7,12 +7,8 @@ navbar:
       href: index.html
     - text: "People"
       href: people.html
-    - text: "Research"
-      menu: 
-      - text: "Current Research"
-        href: research.html
-      - text: "Additional Research Directions"
-        href: additional_research.html
+    - text: "Current Research"
+      href: research.html
     - text: "Publications"
       href: publications.html
     - text: "Join Us"
