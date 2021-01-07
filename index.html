@@ -324,7 +324,7 @@ $(document).ready(function () {
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
 <!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing exactly as it appears within the block,-->
 <style type="text/css">
- html {
+html {
    background: url(images/virgatus_new.jpg);
    background-position: center;
    background-repeat: no-repeat;
@@ -335,10 +335,10 @@ $(document).ready(function () {
 body {
    color: black;
    position: absolute; 
-   top: 200px; 
+   top: 30%; 
    left: 0; 
    width: 100%; 
-   background: rgba(211, 211, 211, .7);
+   background: rgba(255,255,255, .5);;
 }
 
 @media screen and (max-width: 480px) {
@@ -352,9 +352,10 @@ body {
     body {
      color: black;
      left: 0;
-     top: 100px;
+     top: 0;
+     bottom: 0;
      width: 100%; 
-     background: rgba(211, 211, 211, .7);
+     background: rgba(255,255,255, .5);
   }
 }
 </style>
@@ -363,6 +364,7 @@ body {
 <!-- the html object formatted above (still in the language css) sets the background image used for this webpage 
 #IMP the image is dynamically scaling when set this way meaning it's size and what is show changes when you change your browser/screen size
 the url() command tells the computer where this image is currently located compared to the director the rproj is in so it's in a folder called images and the image itself is called virgatus_new.jpg
+#IMP 2: the only issue with using this css background style image is that you cannot add informative captions to them, this is bc css is meant to be used purely for aesthetics, not for conveying information
 background-position: center; just centers the image vertically and horizontally within the screen
 background-repeat: no-repeat; means if the screen is too big that the image can't take up the whole thing, don't repeat the image
 background-size: cover is what makes this image cover the entire width of the screen

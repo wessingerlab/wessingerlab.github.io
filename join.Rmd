@@ -13,13 +13,14 @@ title: 'Join - Wessinger Lab'
 
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
 <!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing exactly as it appears within the block,--> 
+
 ```{css, echo=FALSE}
  html {
    background: url(images/wrightii_thin.jpg);
    background-size: 50%;
    background-position: right;
    background-repeat: no-repeat;
- }
+    }
 
 body{
    color: black;
