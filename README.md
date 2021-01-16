@@ -1,10 +1,13 @@
-Website created using advice from many websites including: 
-https://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html#r_markdown_website_basics (info on getting the basics of the website created)
-https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning?source=post_page---------------------------#:~:text=Whereas%20the%20position%20and%20dimensions,or%20the%20paper's%20page%20box (info on css positioning of elements)
-https://www.geeksforgeeks.org/css-text-formatting/ (information on what you can do with css to style elements, mostly for the style.css but also for the css code blocks within the .rmds)
-another website.. etc...
+###Website created using advice from many websites including:
 
-Things to know: 
+https://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html#r_markdown_website_basics (info on getting the basics of the website created)
+
+https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning?source=post_page---------------------------#:~:text=Whereas%20the%20position%20and%20dimensions,or%20the%20paper's%20page%20box (info on css positioning of elements)
+
+https://www.geeksforgeeks.org/css-text-formatting/ (information on what you can do with css to style elements, mostly for the style.css but also for the css code blocks within the .rmds)
+
+
+###Things to know: 
 
 if you are trying to google how to do something new that I have not left any notes for and not coming up with good results often times adding "github pages with rmd" to the end of your search will lead you to more informative answers
 
