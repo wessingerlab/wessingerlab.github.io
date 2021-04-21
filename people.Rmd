@@ -137,7 +137,7 @@ Clay is an undergraduate lab assistant in the Wessinger Lab. He is a junior Chem
 <br>
 
 *** 
-<img src="images/hoyt.jpeg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/hoyt.jpeg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
   
 <br>
 
