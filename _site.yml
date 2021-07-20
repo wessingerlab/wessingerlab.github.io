@@ -1,9 +1,10 @@
 name: "Wessinger Lab"
 navbar:
   output_dir: "."
-  right:
+  left:
     - text: "Home"
       href: index.html
+  right:
     - text: "People"
       href: people.html
     - text: "Current Research"

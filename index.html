@@ -278,13 +278,12 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
   <a href="people.html">People</a>
 </li>
 <li>
@@ -335,7 +334,8 @@ html {
 body {
    color: black;
    position: absolute; 
-   top: 30%; 
+   top: 0; 
+   bottom: 0;
    left: 0; 
    width: 100%; 
    background: rgba(255,255,255, .5);;
@@ -408,14 +408,19 @@ you can check what this looks like after knitting this web page by narrowing you
 the html object is formatted to be largely the same as the default for bigger screens that was discussed above, one difference is the image that it uses (virgatus_thin.jpg) is a cropped version of the original image because it looks nicer to have a skinnier image here
 
 the body formatting here is also largerly the same except there is a smaller distance from the top of the screen (100 px instead of 200px) -->
-<!-- below is the actual body of the text, aka what is getting formatted in the css body{} above -->
+<p><br><br><br><br><br> <!-- below is the actual body of the text, aka what is getting formatted in the css body{} above --></p>
 <div id="the-wessinger-lab----plant-evolutionary-genetics" class="section level1">
 <h1>The Wessinger Lab -- Plant Evolutionary Genetics</h1>
 <!-- Wessinger Lab is text that is in the header 1 format (styled to have a certain font size and to be centered within the style.css) which is the largest header and is always called in rmd by a single hastag (unlike normal R where hashtags are comments, hashtags always represent the size of the header in rmd, so ## is header 2 the second biggest header and ### is header 3 which is third biggest... etc.)-->
+<p>
 <p>Hello! Welcome!</p>
-<p>The Wessinger lab is located at the <a href="https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php">University of South Carolina Department of Biological Sciences</a>. We are a collaborative and supportive group of researchers studying population genetic processes contributing to adaptive evolution. Our primary study system is Penstemon, an emerging model system for studying convergent / parallel evolution.</p>
+The Wessinger lab is located at the <a href="https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php">University of South Carolina Department of Biological Sciences</a>. We are a collaborative and supportive group of researchers studying population genetic processes contributing to adaptive evolution. Our primary study system is Penstemon, an emerging model system for studying convergent / parallel evolution.
+</p>
 <!-- the text above is all normal body text which is styled first by the css formatting contained within this web page as discussed above (currently formats placement, background color) and second by the formatting contained in the style.css (currently formats font type and font size)-->
 <!--note the [] encase a set of words that are hyperlinked by the following link contained within the () -->
+<center>
+<img src="images/Wessinger_lab_logo_new.png" width="300px" height="300px" style= "padding: 10px; object-fit: cover">
+</center>
 </div>
 
 
