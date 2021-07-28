@@ -31,7 +31,8 @@ body {
    bottom: 0;
    left: 0; 
    width: 100%; 
-   background: rgba(255,255,255, .5);;
+   height: 100%; 
+   background: rgba(255,255,255, .5);
 }
 
 @media screen and (max-width: 480px) {
@@ -127,3 +128,8 @@ The Wessinger lab is located at the [University of South Carolina Department of 
 <!--note the [] encase a set of words that are hyperlinked by the following link contained within the () -->
 
 <center><img src="images/Wessinger_lab_logo_new.png" width="300px" height="300px" style= "padding: 10px; object-fit: cover"></center>
+
+
+<br><br><br><br><br>
+
+<br><br><br><br><br>

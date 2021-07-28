@@ -7,13 +7,14 @@ title: 'New Post-doc Opportunity- Wessinger Lab'
 <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
 <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
 
-## We are recruiting two postdocs to the lab, thanks to funding from NSF and NIH MIRA !
+## We are recruiting two postdocs to the lab, thanks to funding from NSF and NIH MIRA!
 
 These postdocs will lead projects investigating the following types of questions:
-*What is the contribution of introgression to patterns of parallel trait evolution and speciation?
-*What is the genetic and genomic architecture for adaptive evolution?
-*How is complex trait variation maintained in recently diverged species?
-*What components of parallel evolution occur through similar genetic changes?
+
+  * What is the contribution of introgression to patterns of parallel trait evolution and speciation?
+  * What is the genetic and genomic architecture for adaptive evolution?
+  * How is complex trait variation maintained in recently diverged species?
+  * What components of parallel evolution occur through similar genetic changes?
 
 Expertise in phylogenomic analyses, population genetics, quantitative genetics, and fieldwork are a plus!
 
