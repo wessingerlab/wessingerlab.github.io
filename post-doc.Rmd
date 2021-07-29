@@ -7,17 +7,17 @@ title: 'New Post-doc Opportunity- Wessinger Lab'
 <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
 <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
 
-## We are recruiting two postdocs to the lab, thanks to funding from NSF and NIH MIRA!
+## Funding from the NSF and NIH MIRA program is allowing us to recruit two postdocs to join the lab!!
 
-These postdocs will lead projects investigating the following types of questions:
+The successful applicants will lead projects investigating these types of questions, with space to develop independent research directions:
 
   * What is the contribution of introgression to patterns of parallel trait evolution and speciation?
   * What is the genetic and genomic architecture for adaptive evolution?
   * How is complex trait variation maintained in recently diverged species?
   * What components of parallel evolution occur through similar genetic changes?
 
-Expertise in phylogenomic analyses, population genetics, quantitative genetics, and fieldwork are a plus!
+Expertise in population genomics, phylogenomic analyses, quantitative genetics, and fieldwork are a plus! (Any or all of these!)
 
-Start dates are flexible and salaries will be competitive.
+Flexible start date and competitive salary.
 
-Please email Carrie with a statement of interest! Thanks!!
+Please email Carrie with a statement of interest or any questions! Thanks!!
