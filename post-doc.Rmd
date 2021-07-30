@@ -7,7 +7,7 @@ title: 'New Post-doc Opportunity- Wessinger Lab'
 <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
 <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
 
-## Funding from the NSF and NIH MIRA program is allowing us to recruit two postdocs to join the lab!!
+## Funding from the NSF and NIH MIRA program is allowing us to recruit two postdocs to join the lab!
 
 The successful applicants will lead projects investigating these types of questions, with space to develop independent research directions:
 
@@ -20,4 +20,4 @@ Expertise in population genomics, phylogenomic analyses, quantitative genetics, 
 
 Flexible start date and competitive salary.
 
-Please email Carrie with a statement of interest or any questions! Thanks!!
+Please email Carrie with a statement of interest or any questions! Thanks!
