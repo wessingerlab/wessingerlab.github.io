@@ -7,7 +7,7 @@ title: "Alumni - Wessinger Lab"
 <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
 <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
 
-# Previous Lab Members
+# Alumni
 <!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 
 
