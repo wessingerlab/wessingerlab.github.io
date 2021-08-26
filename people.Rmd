@@ -60,7 +60,7 @@ align="left" aligns this image to the RIGHT of the screen, this is different tha
 #### Josh Stevens
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 
-Josh obtained his undergraduate degree at Keene State College and is now a PhD student at the University of South Carolina. Josh's research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology & bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the fall of 2020. 
+Josh obtained his undergraduate degree at Keene State College and is now a PhD student at the University of South Carolina. Josh's research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology & bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the Fall of 2020. 
 
 
 <!-- body text about the person (size set in style.css)-->
@@ -77,7 +77,7 @@ Josh obtained his undergraduate degree at Keene State College and is now a PhD s
 
 #### Trinity Depatie
 
-Trinity is a PhD student at the University of South Carolina focusing on the evolution of morphological floral traits in the Eastern Clade of the genus Penstemon. Trinity has broad interests in floral evolution, ecology, and genetics. She obtained her undergraduate degree at Florida Atlantic University’s Wilkes Honors College and later joined the Wessinger lab in the fall of 2020. Outside of the lab Trinity enjoys running and riding horses. 
+Trinity is a PhD student at the University of South Carolina focusing on the evolution of morphological floral traits in the Eastern Clade of the genus Penstemon. Trinity has broad interests in floral evolution, ecology, and genetics. She obtained her undergraduate degree at Florida Atlantic University’s Wilkes Honors College and later joined the Wessinger lab in the Fall of 2020. Outside of the lab Trinity enjoys running and riding horses. 
 
 <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [TrinityDepatie](https://www.twitter.com/TrinityDepatie)
 
@@ -86,28 +86,13 @@ Trinity is a PhD student at the University of South Carolina focusing on the evo
 <br>
 
 *** 
-
-<img src="images/Ashley.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
-
-<br>
-
-#### Ashley Hamilton
-
-
-Ashley is a lab technician who graduated with a BS in Biology from Texas A&M University-Corpus Christi in Fall 2019. She was originally planning on pursuing marine biology but fell in love with plants and evolution during an undergrad course. Since then, she has pursued these avenues of research passionately, conducting research on a variety of organisms from limpets to seagrass. Currently, she is working on several projects in the Wessinger Lab including analyzing morphological traits and geographic variables to try to understand underlying evolutionary processes at both the population and species level within *Penstemon*.
-
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [botanic_ash](https://www.twitter.com/botanic_ash)
-
-<br>
-
-*** 
-<img src="images/Nimue'.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<img src="images/Nimue'.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 
 #### Nimue' Shive 
 
-Nimue’ Shive is an undergraduate lab assistant in the Wessinger Lab. She is a sophomore enrolled in The University of South Carolina Honors College and is majoring in Environmental Science. In the Wessinger Lab, she assists with plant care and is helping map *Penstemon* species ranges. She enjoys hiking, art, and chocolate cake.
+Nimue’ Shive is an undergraduate lab assistant in the Wessinger Lab. She join the lab in the Fall of 2020 and is enrolled in The University of South Carolina Honors College and is majoring in Environmental Science. In the Wessinger Lab, she assists with plant care and is helping map *Penstemon* species ranges. She enjoys hiking, art, and chocolate cake.
 
 
 <br>
@@ -121,14 +106,14 @@ Nimue’ Shive is an undergraduate lab assistant in the Wessinger Lab. She is a 
 <br>
 
 *** 
-<img src="images/clay.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/clay.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
   
 <br>
 
 #### Clayton Bellinger
 ###### aka **Clay**
 
-Clay is an undergraduate lab assistant in the Wessinger Lab. He is a junior Chemistry major at The University of South Carolina. He keeps over 350 species of plants, many of which are featured on his instagram. He has a special interest in species that are uncommon or ethnobotanically significant. In the Wessinger Lab, he assists with plant care and DNA extractions. He likes to hike and he likes his pet fishes.
+Clay is an undergraduate lab assistant in the Wessinger Lab. He is a Chemistry major at The University of South Carolina and started in the lab in the Spring of 2021. He keeps over 350 species of plants, many of which are featured on his instagram. He has a special interest in species that are uncommon or ethnobotanically significant. In the Wessinger Lab, he assists with plant care and DNA extractions. He likes to hike and he likes his pet fishes.
 
 <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/this_page_has_plants"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a> @[this_page_has_plants](https://www.instagram.com/this_page_has_plants)
 
@@ -137,10 +122,28 @@ Clay is an undergraduate lab assistant in the Wessinger Lab. He is a junior Chem
 <br>
 
 *** 
-<img src="images/Hoyt.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<img src="images/Hoyt.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 
 #### Hoyt Williams
 
-Hoyt is an Undergraduate Lab Assistant in the Wessinger Lab. He is a Sophomore majoring in Biology with a minor in Chemistry. He is just getting started in the Wessinger Lab, and he assists with plant care and general lab maintenance. Outside the lab, Hoyt enjoys hiking, being active outside, and spending time with his friends. 
+Hoyt is an Undergraduate Lab Assistant in the Wessinger Lab. He joined the lab in the Spring of 2021 and is majoring in Biology with a minor in Chemistry. He is conducting an independent research project looking for differences in F3'5'H between *Penstemon eatonii* and *P. laevis*. Outside the lab, Hoyt enjoys hiking, being active outside, and spending time with his friends. 
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+*** 
+
+# Lab Alumni 
+
+####[Click here to meet our former lab members!](./alumni_people.html)
+
+
