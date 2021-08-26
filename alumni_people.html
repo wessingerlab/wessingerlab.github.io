@@ -11,7 +11,7 @@
 
 
 
-<title>The Wessinger Lab</title>
+<title>Alumni - Wessinger Lab</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -307,125 +307,46 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">The Wessinger Lab</h1>
+<h1 class="title toc-ignore">Alumni - Wessinger Lab</h1>
 
 </div>
 
 
 <!--hello, this is an html comment-->
 <!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page-->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68772800-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-68772800-2');
-</script>
+<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
+<div id="previous-lab-members" class="section level1">
+<h1>Previous Lab Members</h1>
+<!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
 <!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
-<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing exactly as it appears within the block,-->
-<style type="text/css">
-html {
-   background: url(images/virgatus_new.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
- }
-
-body {
-   color: black;
-   top: 0; 
-   bottom: 0;
-   left: 0; 
-   width: 100%; 
-   height: 100%; 
-   background: rgba(255,255,255, .5);
-}
-
-@media screen and (max-width: 480px) {
-    html {
-     background: url(images/virgatus_thin.jpg);
-     background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-    }
-    body {
-     color: black;
-     left: 0;
-     top: 0;
-     bottom: 0;
-     width: 100%; 
-     background: rgba(255,255,255, .5);
-  }
-}
-</style>
-<!-- ```{css, echo=FALSE} -->
-<p><!-- html { --> <!--   background: url(images/virgatus_new.jpg);  --> <!--   background-position: center; --> <!--   background-repeat: no-repeat; --> <!--   background-size: cover; --> <!--   background-attachment: fixed; --> <!-- } --></p>
-<!-- the html object formatted above (still in the language css) sets the background image used for this webpage 
-#IMP the image is dynamically scaling when set this way meaning it's size and what is show changes when you change your browser/screen size
-the url() command tells the computer where this image is currently located compared to the director the rproj is in so it's in a folder called images and the image itself is called virgatus_new.jpg
-#IMP 2: the only issue with using this css background style image is that you cannot add informative captions to them, this is bc css is meant to be used purely for aesthetics, not for conveying information
-background-position: center; just centers the image vertically and horizontally within the screen
-background-repeat: no-repeat; means if the screen is too big that the image can't take up the whole thing, don't repeat the image
-background-size: cover is what makes this image cover the entire width of the screen
-background-attachment: fixed; is kind of complicated but means that is there is enough text that the screen needs to scroll, keep the image fixed in it's place aka don't scroll with the text -->
-<!-- body { -->
-<!--    color: black; -->
-<!--    position: absolute;  -->
-<!--    top: 200px;  -->
-<!--    left: 0;  -->
-<!--    width: 100%;  -->
-<!--    background: rgba(211, 211, 211, .7); -->
+<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,-->
+<!-- ```{css, echo=FALSE}
+<!-- img { -->
+<!--     width:  400px; -->
+<!--     height: 400px; -->
+<!--     padding: 10px; -->
+<!--     object-fit: cover; -->
 <!-- } -->
-<!--the body object formatted above (still in the language css) sets the style for the "body" aka the actual text within this web page
-#IMP: this body is set here because it is different than the way we generally want the body formatted in the other pages, if it was something that we wanted on all of the pages then we would set it within the style.css
-color: sets the color of the text
-position: absolute sets the position to be the same relative to the scaling of it's containing block aka relative to the position of other things contained within the page (like images)
-top: 200 px means the body will start 200 pixels down from the top of the screen (again regardless of width or other things contained withing this page as discussed above)
-left: 0 means the body will start 0 pixels from the left of the screen (again regardless of width or other things contained withing this page as discussed above)
-width: 100% sets the width of the body to cover 100% of the width of the screen
-background: rgba(211, 211, 211, .7); sets the background of the body to be a light grey (hex code 211, 211, 211) with an alpha (transparency) value of .7 (70% opaque) -->
-<!-- @media screen and (max-width: 480px) { -->
-<!--     html { -->
-<!--      background: url(images/virgatus_thin.jpg); -->
-<!--      background-size: cover; -->
-<!--      background-attachment: fixed; -->
-<!--      background-position: center; -->
-<!--      background-repeat: no-repeat; -->
-<!--     } -->
-<!--     body { -->
-<!--      color: black; -->
-<!--      left: 0;  -->
-<!--      top: 100px; -->
-<!--      width: 100%;  -->
-<!--      background: rgba(211, 211, 211, .7); -->
-<!--   } -->
-<!-- } -->
-<!-- this block changes the settings that were discussed above to be different if the screen size is smaller than 480 pixels in width aka on phones/ipads because the formatting as it was looked super bad on phones before
-
-you can check what this looks like after knitting this web page by narrowing your screen until it shifts into the different formatting
-
-the html object is formatted to be largely the same as the default for bigger screens that was discussed above, one difference is the image that it uses (virgatus_thin.jpg) is a cropped version of the original image because it looks nicer to have a skinnier image here
-
-the body formatting here is also largerly the same except there is a smaller distance from the top of the screen (100 px instead of 200px) -->
-<p><br><br><br><br><br> <!-- below is the actual body of the text, aka what is getting formatted in the css body{} above --></p>
-<div id="the-wessinger-lab----plant-evolutionary-genetics" class="section level1">
-<h1>The Wessinger Lab -- Plant Evolutionary Genetics</h1>
-<!-- Wessinger Lab is text that is in the header 1 format (styled to have a certain font size and to be centered within the style.css) which is the largest header and is always called in rmd by a single hastag (unlike normal R where hashtags are comments, hashtags always represent the size of the header in rmd, so ## is header 2 the second biggest header and ### is header 3 which is third biggest... etc.)-->
-<p>
-<p>Hello! Welcome!</p>
-The Wessinger lab is located at the <a href="https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php">University of South Carolina Department of Biological Sciences</a>. We are a collaborative and supportive group of researchers studying population genetic processes contributing to adaptive evolution. Our primary study system is Penstemon, an emerging model system for studying convergent / parallel evolution.
-</p>
-<!-- the text above is all normal body text which is styled first by the css formatting contained within this web page as discussed above (currently formats placement, background color) and second by the formatting contained in the style.css (currently formats font type and font size)-->
-<!--note the [] encase a set of words that are hyperlinked by the following link contained within the () -->
+<!-- in this css code block the images called within the rest of this web page (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
+object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
+<!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
+<p><img src="images/Ashley.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the LEFT of the screen 
+height=400px and width=400px means a square with a height and width of 400 pixels each
+style = everything that follows after this is css code 
+"padding: 10px; gives 10 pixels of padding around it the image 
+object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently--></p>
+<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<div id="ashley-hamilton" class="section level4">
+<h4>Ashley Hamilton</h4>
+<p>Ashley was a lab technician who worked in the lab from Aug 2020 - Aug 2021. In the Wessinger Lab, her primary project involved analyzing the geographic distribution of <em>Penstemon</em> species to try to understand the underlying ecogeographic trends of pollination diveregence.</p>
+<p><a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> <a href="https://www.twitter.com/botanic_ash">botanic_ash</a></p>
+<p><br></p>
+<hr />
 <center>
 <img src="images/Wessinger_lab_logo_new.png" width="300px" height="300px" style= "padding: 10px; object-fit: cover">
 </center>
-<p><br><br><br><br><br></p>
-<p><br><br><br><br><br></p>
+</div>
 </div>
 
 

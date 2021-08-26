@@ -1,0 +1,50 @@
+---
+title: "Alumni - Wessinger Lab"
+---
+<!--hello, this is an html comment--> 
+<!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page--> 
+<br>
+<!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
+<!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text-->
+
+# Previous Lab Members
+<!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
+
+
+<!--the code below indicates this is a code block containing code (within the ```) in the language css and we don't want this code to be echoed onto the website (echo=F)-->
+<!--note: no comments can be made within the code block bc rmd is weird so all comments will be below the block and will occur below a comment out version of the thing excatly as it appears within the block,--> 
+<!-- ```{css, echo=FALSE}
+<!-- img { -->
+<!--     width:  400px; -->
+<!--     height: 400px; -->
+<!--     padding: 10px; -->
+<!--     object-fit: cover; -->
+<!-- } -->
+<!-- in this css code block the images called within the rest of this web page (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
+object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
+<!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
+
+<img src="images/ashley.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the LEFT of the screen 
+height=400px and width=400px means a square with a height and width of 400 pixels each
+style = everything that follows after this is css code 
+"padding: 10px; gives 10 pixels of padding around it the image 
+object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently-->
+
+<br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
+
+
+#### Ashley Hamilton
+
+Ashley was a lab technician who worked in the lab from Aug 2020 - Aug 2021. In the Wessinger Lab, her primary project involved analyzing the geographic distribution of *Penstemon* species to try to understand the underlying ecogeographic trends of pollination diveregence.
+
+<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/botanic_ash"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [botanic_ash](https://www.twitter.com/botanic_ash)
+
+<br> 
+
+***
+
+
+<center><img src="images/Wessinger_lab_logo_new.png" width="300px" height="300px" style= "padding: 10px; object-fit: cover"></center>
