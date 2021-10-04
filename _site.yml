@@ -13,8 +13,6 @@ navbar:
       href: publications.html
     - text: "Join Us"
       href: join.html
-    - text: "Post-doc Position!"
-      href: post-doc.html
 output:
   html_document:
     css: "style.css"
