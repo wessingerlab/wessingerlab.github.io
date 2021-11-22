@@ -115,14 +115,14 @@ background: rgba(211, 211, 211, .5); sets the background of the body to be a lig
 <tr><td><img src="images/mira.phylo.jpg" align="right" width="300" style="padding: 15px"></td></tr>
 </table>
 
-We welcome applications from prospective postdocs interested in the following types of questions, with space to develop independent research directions:
+We are recruiting a postdoc to the lab with population genetics/genomics expertise. The successful candidate will lead research investigating the following types of questions, with space to develop independent and creative research directions:
 
-  * What is the contribution of introgression to patterns of parallel trait evolution and speciation?
+  * What is the contribution of introgression to parallel trait evolution and speciation?
   * What is the genetic and genomic architecture for adaptive evolution?
   * How is complex trait variation maintained in recently diverged species?
   * What components of parallel evolution occur through similar genetic changes?
 
-Expertise in population genomics, phylogenomic analyses, quantitative genetics, and fieldwork are a plus! 
+Expertise in population genomics, quantitative genetics, phylogenomic analyses, and fieldwork are a plus! 
 
 Flexible start date and competitive salary. Please email Carrie with a statement of interest and CV.
 
