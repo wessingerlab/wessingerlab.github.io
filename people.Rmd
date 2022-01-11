@@ -43,6 +43,8 @@ Carrie started the lab at the University of South Carolina in the Spring of 2020
 
 <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/carriewessi"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a> [carriewessi](https://www.twitter.com/carriewessi)
 
+<a href="pdfs/latest.CV.wessinger.nophone.pdf" target="_blank">CV</a>
+
 <br>
 
 <!-- after each person I have inserted two separated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
