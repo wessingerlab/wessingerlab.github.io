@@ -129,17 +129,6 @@ Flexible start date and competitive salary. Please email Carrie with a CV and a 
 
 ***
 
-### Graduate Student Opportunity
-
-We are currently recruiting a graduate student interested in studying the genetic and ecological mechanisms for floral variation within and across populations. Interested prospective students should please send Carrie a CV and a description of your research interests (and how working with us would help you meet these interests).
-
-<table class="image" align="center">
-<caption align="bottom">Widespread flower color polymorphism in P. whippleanus. </caption>
-<tr><td><img src="images/whippleanus.jpg" align="center" width="500" style="padding: 10px"></td></tr>
-</table>
-
-***
-
 ### Undergraduate Research Opportunities
 <!--h4 header, 4rd biggest, size set in style.css, this is consistent for all headers below-->
 
@@ -158,4 +147,16 @@ UofSC is located in downtown Columbia, South Carolina. The campus has a rich his
 
 You can contact Carrie at:
 wessinc[at]mailbox.sc.edu
+
+***
+
+<!--### Graduate Student Opportunity
+
+We are currently recruiting a graduate student interested in studying the genetic and ecological mechanisms for floral variation within and across populations. Interested prospective students should please send Carrie a CV and a description of your research interests (and how working with us would help you meet these interests).
+
+<table class="image" align="center">
+<caption align="bottom">Widespread flower color polymorphism in P. whippleanus. </caption>
+<tr><td><img src="images/whippleanus.jpg" align="center" width="500" style="padding: 10px"></td></tr>
+</table> -->
+
 
