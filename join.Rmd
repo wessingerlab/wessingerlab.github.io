@@ -104,18 +104,18 @@ background: rgba(211, 211, 211, .5); sets the background of the body to be a lig
 
 <br>
 
-### We are currently growing our lab, thanks to recent funding from the NSF and NIH !
+### We are currently growing our lab!!
 
 ***
 
-### Postdoc Research Opportunity
+### Postdoc Research Opportunities
 
 <table class="image" align="right">
 <caption align="bottom">Four convergent origins of hummingbird syndrome in a focal Penstemon clade</caption>
 <tr><td><img src="images/mira.phylo.jpg" align="right" width="300" style="padding: 15px"></td></tr>
 </table>
 
-We are recruiting a postdoc to the lab with population genetics/genomics expertise. The successful candidate will lead research investigating the following types of questions, with space to develop independent and creative research directions:
+We are recruiting postdocs to the lab with population genetics/genomics expertise to work on NSF and NIH funded research. The successful candidate will lead research investigating the following types of questions, with space to develop independent and creative research directions:
 
   * What is the contribution of introgression to parallel trait evolution and speciation?
   * What is the genetic and genomic architecture for adaptive evolution?
@@ -124,8 +124,15 @@ We are recruiting a postdoc to the lab with population genetics/genomics experti
 
 Expertise in population genomics, quantitative genetics, phylogenomic analyses, and fieldwork are a plus! 
 
-Flexible start date and competitive salary. Please email Carrie with a CV and a statement of interest that briefly describes your research experiences and interests, your postdoctoral training goals, and why this opportunity is a good fit to advance those goals. **_This position is open until filled_**.
+Flexible start date and competitive salary. Please email Carrie with a CV and a statement of interest that briefly describes your research experiences and interests, your postdoctoral training goals, and how this opportunity is a good fit to advance those goals. **_This position is open until filled_**.
 
+
+***
+
+### Research Technician Opportunities
+<!--h4 header, 4rd biggest, size set in style.css, this is consistent for all headers below-->
+
+Please contact Carrie with a CV and statement of interest to inquire about research technician opportunities
 
 ***
 
