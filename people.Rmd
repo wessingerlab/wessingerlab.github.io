@@ -111,7 +111,7 @@ Trinity joined the lab as a PhD student in the fall of 2020, and is interested i
 <br>
 
 *** 
-<img src="images/zack.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<img src="images/zack.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 
@@ -128,7 +128,7 @@ Zack is a PhD student in the lab. He obtained a BS in Ecology, Evolution, and Be
 <br>
 
 *** 
-<img src="images/Hoyt2.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Hoyt2.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
   
 <br>
 
