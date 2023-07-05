@@ -124,6 +124,9 @@ background: rgba(211, 211, 211, .7); sets the background of the body to be a lig
 
 <!-- below are publications in order from most recent to less recent with the actual publication hyperlinked within the journal name, Carrie's name is bolded--> 
 
+Stevens JTES, LC Wheeler, NH Williams, AM Norton, & CA Wessinger (2023). Predictive links between petal color and pigment quantities in natural Penstemon hybrids. [Integrative and Comparative Biology](https://doi.org/10.1093/icb/icad073)
+
+<br>
 
 Hamilton AM & CA Wessinger (2022). Adaptation to lower latitudes and lower elevations precedes the evolution of hummingbird pollination in western North American Penstemon. [American Journal of Botany](https://doi.org/10.1002/ajb2.1857)
 
