@@ -124,11 +124,27 @@ background: rgba(211, 211, 211, .7); sets the background of the body to be a lig
 
 <!-- below are publications in order from most recent to less recent with the actual publication hyperlinked within the journal name, Carrie's name is bolded--> 
 
+BW Stone & CA Wessinger (2023). Ecological diversification in an adaptive radiation of plants: the role of de novo mutation and introgression. [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.11.01.565185v1.abstract)
+
+<br>
+
+Wessinger CA (2023). How the switch to hummingbird pollination has greatly contributed to our understanding of evolutionary processes. [New Phytologist Tansley Insight](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19335)
+
+<br>
+
+Wessinger CA, AM Katzer, PM Hime, MD Rausher, JK Kelly, & LC Hileman (2023). A few genetic loci distinguish Penstemon species with flowers adapted to pollination by bees or hummingbirds. [PLoS Biology 21(9), e3002294](https://doi.org/10.1371/journal.pbio.3002294)
+
+<br>
+
+Dellinger AS, AM Hamilton, CA Wessinger, & SD Smith (2023). Opposing patterns of altitude-drive pollinator turnover in the tropical and temperate Americas. [The American Naturalist 202, 152-165](https://www.journals.uchicago.edu/doi/full/10.1086/725017)
+
+<br>
+
 Stevens JTES, LC Wheeler, NH Williams, AM Norton, & CA Wessinger (2023). Predictive links between petal color and pigment quantities in natural Penstemon hybrids. [Integrative and Comparative Biology](https://doi.org/10.1093/icb/icad073)
 
 <br>
 
-Hamilton AM & CA Wessinger (2022). Adaptation to lower latitudes and lower elevations precedes the evolution of hummingbird pollination in western North American Penstemon. [American Journal of Botany](https://doi.org/10.1002/ajb2.1857)
+Hamilton AM & CA Wessinger (2022). Adaptation to lower latitudes and lower elevations precedes the evolution of hummingbird pollination in western North American Penstemon. [American Journal of Botany 6, 1047-1055](https://doi.org/10.1002/ajb2.1857)
 
 <br>
 
