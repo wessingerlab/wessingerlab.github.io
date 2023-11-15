@@ -24,6 +24,21 @@ title: "Alumni - Wessinger Lab"
 object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
 <!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
 
+<img src="images/clay.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover">
+  
+<br>
+
+#### Clayton Bellinger 
+###### aka **Clay**
+
+Clay worked in the lab as an undergrad from Spring 2021 - Fall 2022. He keeps over 350 species of plants, many of which are featured on his instagram. He has a special interest in species that are uncommon or ethnobotanically significant. In the Wessinger Lab, he assisted with plant care, fieldwork, and benchwork. He likes to hike and he likes his pet fishes.
+
+<a target="_blank" title="follow me on instagram" href="https://www.instagram.com/this_page_has_plants"><img alt="follow me on instagram" src="https://img.informer.com/icons/png/48/4583/4583368.png" border=0></a> @[this_page_has_plants](https://www.instagram.com/this_page_has_plants)
+
+<br><br><br>
+
+***
+
 <img src="images/Alice.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover">
 
 <br>
