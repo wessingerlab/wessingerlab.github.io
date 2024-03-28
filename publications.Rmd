@@ -124,11 +124,11 @@ background: rgba(211, 211, 211, .7); sets the background of the body to be a lig
 
 <!-- below are publications in order from most recent to less recent with the actual publication hyperlinked within the journal name, Carrie's name is bolded--> 
 
-BW Stone & CA Wessinger (2023). Ecological diversification in an adaptive radiation of plants: the role of de novo mutation and introgression. [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.11.01.565185v1.abstract)
+BW Stone & CA Wessinger (2024). Ecological diversification in an adaptive radiation of plants: the role of de novo mutation and introgression. [Molecular Biology and Evolution](https://academic.oup.com/mbe/article/41/1/msae007/7564791)
 
 <br>
 
-Wessinger CA (2023). How the switch to hummingbird pollination has greatly contributed to our understanding of evolutionary processes. [New Phytologist Tansley Insight](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19335)
+Wessinger CA (2024). How the switch to hummingbird pollination has greatly contributed to our understanding of evolutionary processes. [New Phytologist Tansley Insight](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19335)
 
 <br>
 

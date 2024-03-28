@@ -63,7 +63,7 @@ position: center; centers the entire object (image+caption) on the screen, BUT d
 
 #### ***How do complex adaptations rapidly - and repeatedly - evolve during species radiations?***
 
-We seek to understand how genetic and ecological processes generate and maintain trait diversity. We are primarily exploring these issues in *Penstemon*, an enigmatic comparative system for studying complex trait evolution. Our work developing *Penstemon* as a model for evolutionary genetics is collaborative with [Lena Hileman](http://www.hilemanlab.org/), [John Kelly](https://eeb.ku.edu/john-kelly), [Mark Rausher](http://people.duke.edu/~mrausher/), and [Kate Ostevik](https://www.osteviklab.com/).
+We seek to understand how genetic and ecological processes generate and maintain trait diversity. We are primarily exploring these issues in *Penstemon*, an enigmatic comparative system for studying complex trait evolution. Our work developing *Penstemon* as a model for evolutionary genetics is collaborative with [Lena Hileman](http://www.hilemanlab.org/) and [John Kelly](https://eeb.ku.edu/john-kelly).
 
 <br>
 

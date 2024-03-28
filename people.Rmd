@@ -84,9 +84,6 @@ align="left" aligns this image to the RIGHT of the screen, this is different tha
 Luke is Postdoc Researcher in the lab. He grew up in central Oregon and earned a BSc in biochemistry from Montana State University, where he worked on engineering nanomaterials derived from viral capsids. He subsequently earned his PhD in Biochemistry in the Harms lab at the University of Oregon, studying the evolution of binding specificity in the S100 proteins. Seeking to understand how biochemical evolution plays out in terms of organismal phenotypes, Luke joined Stacey Smith's lab at CU Boulder in 2018 to probe the genetic, molecular, and biochemical underpinnings of flower color evolution. His research in the Wessinger lab focuses on studying adaptive introgression and floral trait evolution in the Habroanthus clade of Penstemon. Luke enjoys biking, unicycling, photography, creative writing, and exploring the outdoors on foot in search of interesting plants and animals.
 
 
-<!-- body text about the person (size set in style.css)-->
-
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/LCWheeler9000"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [LCWheeler9000](https://www.twitter.com/LCWheeler9000)
 
 <br><br><br><br>
 
@@ -118,9 +115,11 @@ Josh is a PhD student in the lab. He obtained his undergraduate degree at Keene 
 
 #### Trinity Depatie 
 
-Trinity joined the lab as a PhD student in the fall of 2020, and is interested in the evolution of floral morphological traits. Her dissertation focuses on the ecological function and genetic basis of personate flowers in Penstemon's eastern clade (sect. Penstemon). Outside of lab, Trinity likes baking, hiking, and riding horses.
+Trinity joined the lab as a PhD student in the fall of 2020, and is interested in the evolution of floral morphological traits. Her dissertation focuses on the ecological function and genetic basis of personate flowers in Penstemon's eastern clade (sect. Penstemon). Outside of lab, Trinity likes baking, hiking, and riding horses. 
 
 <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [TrinityDepatie](https://www.twitter.com/TrinityDepatie)
+
+[Trinity's website](https://www.trinityhdepatie.com)
 
 <br>
 
@@ -172,6 +171,24 @@ Hoyt is a technician in the lab. He was an undergrad researcher from April 2021 
 
 Albert is an undergraduate who joined the lab in Fall 2022 and is enrolled in the Honors College with a biology major. In the lab, he is working on anthocyanin pigment extractions in the Dasanthera penstemons and is building a model to predict anthocyanin data from color data. Outside the lab, he enjoys working out, cooking, and singing karaoke.
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+*** 
+<img src="images/Ella.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+  
+<br>
+
+#### Ella Forrester 
+
+Ella joined the lab as an undergraduate student in the fall of 2023. She is a Public Health major and is enrolled in the Honors College. Within the lab, she is working with Trinity on her dissertation regarding the function and genetic basis of personate Penstemon flowers. Outside of lab, Ella enjoys reading, dancing, and trying new foods.
 
 <br>
 
