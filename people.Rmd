@@ -41,8 +41,6 @@ object-fit: cover;" defines how the actual image fits within the image container
 Carrie started the lab at the University of South Carolina in the Spring of 2020. She is a native of Portland, Oregon and earned her BS in Biology from Brown University where she gained an appreciation for organismal and evolutionary biology. She then worked with Mark Rausher at Duke University for her PhD and worked with Lena Hileman (and John Kelly) at the University of Kansas for her postdoc, all current collaborators. She is fascinated by the phenomenon of parallel evolution. Outside of work, she loves exploring Columbia and the natural beauty of South Carolina. 
 <!-- body text about the person (size set in style.css)-->
 
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/carriewessi"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [carriewessi](https://www.twitter.com/carriewessi)
-
 <a href="pdfs/latest.CV.wessinger.pdf" target="_blank">CV</a>
 
 wessinc[at]mailbox.sc.edu
@@ -61,28 +59,26 @@ align="left" aligns this image to the RIGHT of the screen, this is different tha
 #### Ben Stone 
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 
-Ben is an NSF Postdoc Fellow in the lab. He received his BS in Evolution, Ecology, and Organismal Biology at The Ohio State University. He stayed at OSU to work with Andi Wolfe for his PhD, where he studied comparative phylogeography and systematics in Penstemon subgenus Dasanthera. Ben's research focuses on hybridization and transitions to hummingbird pollination in the Dasanthera clade of Penstemon. Outside of the lab, Ben likes exploring nature and playing music. Ben joined the lab in the Fall of 2021.
+Ben is an NSF Postdoc Fellow in the lab. He received his BS in Evolution, Ecology, and Organismal Biology at The Ohio State University. He stayed at OSU to work with Andi Wolfe for his PhD, where he studied comparative phylogeography and systematics in Penstemon subgenus Dasanthera. Ben's research focuses on hybridization and transitions to hummingbird pollination in the Dasanthera clade of Penstemon. Outside of the lab, Ben likes exploring nature and playing music. Ben joined the lab in the Fall of 2021. Ben will be starting as an Assistant Professor in Fall 2025 at Mississippi State University!
 
+[Stone Lab at MSU!](https://benstemon.github.io)
 
 <!-- body text about the person (size set in style.css)-->
-
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/benstemon"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [benstemon](https://www.twitter.com/benstemon)
 
 <br><br><br><br>
 
 ***
-<img src="images/Luke.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Aidan.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
 <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
 
 <br>
 <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
 
-#### Luke Wheeler
+#### Aidan Short
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 
-Luke is Postdoc Researcher in the lab. He grew up in central Oregon and earned a BSc in biochemistry from Montana State University, where he worked on engineering nanomaterials derived from viral capsids. He subsequently earned his PhD in Biochemistry in the Harms lab at the University of Oregon, studying the evolution of binding specificity in the S100 proteins. Seeking to understand how biochemical evolution plays out in terms of organismal phenotypes, Luke joined Stacey Smith's lab at CU Boulder in 2018 to probe the genetic, molecular, and biochemical underpinnings of flower color evolution. His research in the Wessinger lab focuses on studying adaptive introgression and floral trait evolution in the Habroanthus clade of Penstemon. Luke enjoys biking, unicycling, photography, creative writing, and exploring the outdoors on foot in search of interesting plants and animals.
-
+Aidan is an NSF Postdoc Fellow in the lab studying how divergent pollinator adaptation contributes to genome divergence and speciation.  To do this he is analyzing patterns of selection and gene flow between the sister species Penstemon barbatus and virgatus, and is also performing simulations of pollinator isolation. Aidan developed an interest in speciation as a PhD student in Matt Streisfeld's lab where he studied the outcomes of hybridization within the Mimulus aurantiacus species complex. Outside of the lab, he enjoys spending time with his wife and son. He joined the lab in January 2025.
 
 
 <br><br><br><br>
@@ -102,9 +98,6 @@ Josh is a PhD student in the lab. He obtained his undergraduate degree at Keene 
 
 
 <!-- body text about the person (size set in style.css)-->
-
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/JoshuaTEStevens"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [JoshuaTEStevens](https://www.twitter.com/JoshuaTEStevens)
-
 <br><br><br><br>
 
 ***
@@ -116,8 +109,6 @@ Josh is a PhD student in the lab. He obtained his undergraduate degree at Keene 
 #### Trinity Depatie 
 
 Trinity joined the lab as a PhD student in the fall of 2020, and is interested in the evolution of floral morphological traits. Her dissertation focuses on the ecological function and genetic basis of personate flowers in Penstemon's eastern clade (sect. Penstemon). Outside of lab, Trinity likes baking, hiking, and riding horses. 
-
-<a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/TrinityDepatie"><img alt="follow me on Twitter" src="https://apkfree.com/apk/0/143/icons/952.png" border=0></a> [TrinityDepatie](https://www.twitter.com/TrinityDepatie)
 
 [Trinity's website](https://www.trinityhdepatie.com)
 
@@ -147,52 +138,13 @@ Zack is a PhD student in the lab. He obtained a BS in Ecology, Evolution, and Be
 <br>
 
 *** 
-<img src="images/Hoyt2.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Palmer.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 
-#### Hoyt Williams 
+#### Palmer Lambert
 
-Hoyt is a technician in the lab. He was an undergrad researcher from April 2021 to May 2022, when he graduated from U of SC with a BS in Biology. He decided to continue work in the lab as a technician post graduation in order to learn more about evolutionary genetics. His current research involves finding the genetic basis of the flower color difference between *Penstemon eatonii* and *P. laevis*. He assists in running the lab and supporting his labmates' research project. In his free time, Hoyt enjoys playing Spikeball, listening to music, being active, and adventuring.
-
-<br>
-
-<br>
-
-<br>
-
-
-*** 
-<img src="images/Albert.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
-  
-<br>
-
-#### Albert Hatton 
-
-Albert is an undergraduate who joined the lab in Fall 2022 and is enrolled in the Honors College with a biology major. In the lab, he is working on anthocyanin pigment extractions in the Dasanthera penstemons and is building a model to predict anthocyanin data from color data. Outside the lab, he enjoys working out, cooking, and singing karaoke.
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-*** 
-<img src="images/Ella.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
-  
-<br>
-
-#### Ella Forrester 
-
-Ella joined the lab as an undergraduate student in the fall of 2023. She is a Public Health major and is enrolled in the Honors College. Within the lab, she is working with Trinity on her dissertation regarding the function and genetic basis of personate Penstemon flowers. Outside of lab, Ella enjoys reading, dancing, and trying new foods.
-
-<br>
-
-<br>
+Palmer joined the lab as a technician in fall of 2024. He received a BS in environmental ecology at the University of Dayton. Since graduating, he has worked as a field technician for the USFS, collecting fire ecology data for Morris Johnson of the University of Washington. Palmer has a broad interest in environmental ecology and joined the lab to learn more about evolutionary ecology. His current roles within the lab are developing morphometric approaches to analyze flower shape data, helping to run the lab, and supporting his labmates’ research. Away from lab, he enjoys hiking, hunting, fishing, and crocheting.
 
 <br>
 
