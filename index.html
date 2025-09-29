@@ -13,12 +13,22 @@
 
 <title>The Wessinger Lab</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -29,12 +39,16 @@
 <!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
 IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -47,32 +61,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -83,10 +73,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -103,40 +89,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -164,7 +126,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -176,7 +138,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -186,11 +148,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -202,13 +181,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -216,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -269,7 +240,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -300,7 +271,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -360,7 +331,11 @@ body {
 }
 </style>
 <!-- ```{css, echo=FALSE} -->
-<p><!-- html { --> <!--   background: url(images/virgatus_new.jpg);  --> <!--   background-position: center; --> <!--   background-repeat: no-repeat; --> <!--   background-size: cover; --> <!--   background-attachment: fixed; --> <!-- } --></p>
+<p><!-- html { --> <!--   background: url(images/virgatus_new.jpg);  -->
+<!--   background-position: center; -->
+<!--   background-repeat: no-repeat; -->
+<!--   background-size: cover; -->
+<!--   background-attachment: fixed; --> <!-- } --></p>
 <!-- the html object formatted above (still in the language css) sets the background image used for this webpage 
 #IMP the image is dynamically scaling when set this way meaning it's size and what is show changes when you change your browser/screen size
 the url() command tells the computer where this image is currently located compared to the director the rproj is in so it's in a folder called images and the image itself is called virgatus_new.jpg
@@ -408,12 +383,21 @@ you can check what this looks like after knitting this web page by narrowing you
 the html object is formatted to be largely the same as the default for bigger screens that was discussed above, one difference is the image that it uses (virgatus_thin.jpg) is a cropped version of the original image because it looks nicer to have a skinnier image here
 
 the body formatting here is also largerly the same except there is a smaller distance from the top of the screen (100 px instead of 200px) -->
-<p><br><br><br><br><br> <!-- below is the actual body of the text, aka what is getting formatted in the css body{} above --></p>
-<div id="the-wessinger-lab-plant-evolutionary-genetics" class="section level1">
+<p><br><br><br><br><br>
+<!-- below is the actual body of the text, aka what is getting formatted in the css body{} above --></p>
+<div id="the-wessinger-lab-plant-evolutionary-genetics"
+class="section level1">
 <h1>The Wessinger Lab – Plant Evolutionary Genetics</h1>
 <!-- Wessinger Lab is text that is in the header 1 format (styled to have a certain font size and to be centered within the style.css) which is the largest header and is always called in rmd by a single hastag (unlike normal R where hashtags are comments, hashtags always represent the size of the header in rmd, so ## is header 2 the second biggest header and ### is header 3 which is third biggest... etc.)-->
 <p>
-The Wessinger lab is located at the <a href="https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php">University of South Carolina Department of Biological Sciences</a>. We are a collaborative group of researchers studying population genetic processes contributing to adaptive evolution. Our primary study system is Penstemon, an emerging model system for studying convergent / parallel evolution. We are committed to diversity, inclusion, and anti-racism. Our goal is to build a welcoming and supportive environment for all researchers.
+The Wessinger lab is located at the <a
+href="https://www.sc.edu/study/colleges_schools/artsandsciences/biological_sciences/our_people/directory/wessinger_carolyn.php">University
+of South Carolina Department of Biological Sciences</a>. We are a
+collaborative group of researchers studying population genetic processes
+contributing to adaptive evolution. Our primary study system is
+Penstemon, an emerging model system for studying convergent / parallel
+evolution. We are committed to building a welcoming and supportive
+environment for all researchers.
 </p>
 <!-- the text above is all normal body text which is styled first by the css formatting contained within this web page as discussed above (currently formats placement, background color) and second by the formatting contained in the style.css (currently formats font type and font size)-->
 <!--note the [] encase a set of words that are hyperlinked by the following link contained within the () -->
@@ -436,7 +420,7 @@ The Wessinger lab is located at the <a href="https://www.sc.edu/study/colleges_s
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -454,7 +438,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
