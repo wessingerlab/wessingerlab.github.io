@@ -13,12 +13,22 @@
 
 <title>Alumni - Wessinger Lab</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -29,12 +39,16 @@
 <!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
 IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -47,32 +61,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -83,10 +73,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -103,40 +89,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -164,7 +126,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -176,7 +138,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -186,11 +148,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -202,13 +181,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -216,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -269,7 +240,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -300,7 +271,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -311,7 +282,9 @@ $(document).ready(function () {
 
 <!--hello, this is an html comment-->
 <!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page-->
-<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
+<p><br>
+<!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
+<!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
 <div id="alumni" class="section level1">
 <h1>Alumni</h1>
 <!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
@@ -327,11 +300,47 @@ $(document).ready(function () {
 <!-- in this css code block the images called within the rest of this web page (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
 object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
 <!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
+<p><img src="images/ben.stone.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
+<p><br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<div id="ben-stone" class="section level4">
+<h4>Ben Stone</h4>
+<!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
+<p>Ben was an NSF Postdoc Fellow in the lab from 2021-2025. His work
+focuses on hybridization and transitions to hummingbird pollination in
+the Dasanthera clade of Penstemon. Outside of the lab, Ben likes
+exploring nature and playing music. Ben joined the lab in the Fall of
+2021. Ben started as an Assistant Professor in Fall 2025 at Mississippi
+State University!</p>
+<p><a href="https://benstemon.github.io">Stone Lab at MSU!</a></p>
+<!-- body text about the person (size set in style.css)-->
+<p><br><br><br></p>
+<hr />
+<p><img src="images/Josh.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website --></p>
+<p><br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+</div>
+<div id="josh-stevens" class="section level4">
+<h4>Josh Stevens</h4>
+<!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
+<p>Josh was a PhD student in the lab from 2020-2025. His dissertation
+focused on describing mechanisms of flower color variation in a natural
+penstemon hybrid zone. In addition, he developed dissertation work
+focused on teaching pedagogy.</p>
+<!-- body text about the person (size set in style.css)-->
+<p><br><br><br></p>
+<hr />
 <p><img src="images/Ella.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
 <p><br></p>
+</div>
 <div id="ella-forrester" class="section level4">
 <h4>Ella Forrester</h4>
-<p>Ella worked in the lab as an undergraduate student from the fall of 2023 to the fall of 2024. She is a Public Health major and is enrolled in the Honors College. Within the lab, she worked with Trinity on the function and genetic basis of personate Penstemon flowers.</p>
+<p>Ella worked in the lab as an undergraduate student from the fall of
+2023 to the fall of 2024. She is a Public Health major and is enrolled
+in the Honors College. Within the lab, she worked with Trinity on the
+function and genetic basis of personate Penstemon flowers.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/Albert.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -339,7 +348,10 @@ object-fit: cover; defines how the actual image fits within the image container 
 </div>
 <div id="albert-hatton" class="section level4">
 <h4>Albert Hatton</h4>
-<p>Albert was an Honors College student that joined the lab in Fall 2022 and received his B.Sc in Fall of 2024. Albert’s honors thesis focused on identifying the pigments underlying flower color variation in natural penstemon hybrid zones.</p>
+<p>Albert was an Honors College student that joined the lab in Fall 2022
+and received his B.Sc in Fall of 2024. Albert’s honors thesis focused on
+identifying the pigments underlying flower color variation in natural
+penstemon hybrid zones.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/Hoyt2.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -347,7 +359,11 @@ object-fit: cover; defines how the actual image fits within the image container 
 </div>
 <div id="hoyt-williams" class="section level4">
 <h4>Hoyt Williams</h4>
-<p>Hoyt was an undergrad researcher from April 2021 to May 2022, when he graduated from U of SC with a BS in Biology. He then worked in the lab as a research technician until Summer 2024. His contributions to the lab cannot be overstated - he helped move every project in the lab forward.</p>
+<p>Hoyt was an undergrad researcher from April 2021 to May 2022, when he
+graduated from U of SC with a BS in Biology. He then worked in the lab
+as a research technician until Summer 2024. His contributions to the lab
+cannot be overstated - he helped move every project in the lab
+forward.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/Luke.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -355,7 +371,13 @@ object-fit: cover; defines how the actual image fits within the image container 
 </div>
 <div id="luke-wheeler" class="section level4">
 <h4>Luke Wheeler</h4>
-<p>Luke was a postdoc in the lab from Fall 2022 - Summer 2024. He earned his PhD in Biochemistry at the University of Oregon, studying the evolution of binding specificity in the S100 proteins. His research in the Wessinger lab focused on studying adaptive introgression and floral trait evolution in the Habroanthus clade of Penstemon. He is currently an instructor in chemistry at Northglenn High School in Northglenn, Colorado.</p>
+<p>Luke was a postdoc in the lab from Fall 2022 - Summer 2024. He earned
+his PhD in Biochemistry at the University of Oregon, studying the
+evolution of binding specificity in the S100 proteins. His research in
+the Wessinger lab focused on studying adaptive introgression and floral
+trait evolution in the Habroanthus clade of Penstemon. He is currently
+an instructor in chemistry at Northglenn High School in Northglenn,
+Colorado.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/clay.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -365,7 +387,12 @@ object-fit: cover; defines how the actual image fits within the image container 
 <h4>Clayton Bellinger</h4>
 <div id="aka-clay" class="section level6">
 <h6>aka <strong>Clay</strong></h6>
-<p>Clay worked in the lab as an undergrad from Spring 2021 - Fall 2022. He keeps over 350 species of plants, many of which are featured on his instagram. He has a special interest in species that are uncommon or ethnobotanically significant. In the Wessinger Lab, he assisted with plant care, fieldwork, and benchwork. He likes to hike and he likes his pet fishes.</p>
+<p>Clay worked in the lab as an undergrad from Spring 2021 - Fall 2022.
+He keeps over 350 species of plants, many of which are featured on his
+instagram. He has a special interest in species that are uncommon or
+ethnobotanically significant. In the Wessinger Lab, he assisted with
+plant care, fieldwork, and benchwork. He likes to hike and he likes his
+pet fishes.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/Alice.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -374,7 +401,10 @@ object-fit: cover; defines how the actual image fits within the image container 
 </div>
 <div id="alice-norton" class="section level4">
 <h4>Alice Norton</h4>
-<p>Alice worked in the lab as an undergrad from Spring 2022 - Fall 2022. She was a valued member of field expeditions and, in the lab, developed methods for quantifying variation in anthocyanin pigment production. In her free time she likes to run triathlons.</p>
+<p>Alice worked in the lab as an undergrad from Spring 2022 - Fall 2022.
+She was a valued member of field expeditions and, in the lab, developed
+methods for quantifying variation in anthocyanin pigment production. In
+her free time she likes to run triathlons.</p>
 <p><br><br><br></p>
 <hr />
 <p><img src="images/Nimue'.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"></p>
@@ -382,20 +412,29 @@ object-fit: cover; defines how the actual image fits within the image container 
 </div>
 <div id="nimue-shive" class="section level4">
 <h4>Nimue’ Shive</h4>
-<p>Nim worked in the lab as an undergrad from Fall 2020 - Spring 2022. In the Wessinger Lab, she helped with plant care and to map <em>Penstemon</em> species ranges. She enjoys hiking, art, and chocolate cake.</p>
+<p>Nim worked in the lab as an undergrad from Fall 2020 - Spring 2022.
+In the Wessinger Lab, she helped with plant care and to map
+<em>Penstemon</em> species ranges. She enjoys hiking, art, and chocolate
+cake.</p>
 <p><br><br><br></p>
 <hr />
-<p><img src="images/Ashley.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+<p><img src="images/Ashley.jpg" width="250px" height="250px" align="left" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the LEFT of the screen 
 height=400px and width=400px means a square with a height and width of 400 pixels each
 style = everything that follows after this is css code 
 "padding: 10px; gives 10 pixels of padding around it the image 
 object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently--></p>
-<p><br> <br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<p><br> <br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 </div>
 <div id="ashley-hamilton" class="section level4">
 <h4>Ashley Hamilton</h4>
-<p>Ashley worked in the lab from Aug 2020 - Aug 2021 as a lab technician. In the Wessinger Lab, her primary project involved analyzing the geographic distribution of <em>Penstemon</em> species to try to understand the underlying ecogeographic trends of pollination divergence.</p>
+<p>Ashley worked in the lab from Aug 2020 - Aug 2021 as a lab
+technician. In the Wessinger Lab, her primary project involved analyzing
+the geographic distribution of <em>Penstemon</em> species to try to
+understand the underlying ecogeographic trends of pollination
+divergence.</p>
 <p><br></p>
 <hr />
 <center>
@@ -413,7 +452,7 @@ object-fit: cover;" defines how the actual image fits within the image container
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -431,7 +470,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

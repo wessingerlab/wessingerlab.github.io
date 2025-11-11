@@ -32,6 +32,9 @@ style = everything that follows after this is css code
 "padding: 10px; gives 10 pixels of padding around it the image 
 object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently-->
 
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
+
 <br>
 <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
 
@@ -48,27 +51,9 @@ wessinc[at]mailbox.sc.edu
 
 <!-- after each person I have inserted two separated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
 
-***
-<img src="images/ben.stone.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
-<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
-align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
-
-<br>
-<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
-
-#### Ben Stone 
-<!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
-
-Ben is an NSF Postdoc Fellow in the lab. He received his BS in Evolution, Ecology, and Organismal Biology at The Ohio State University. He stayed at OSU to work with Andi Wolfe for his PhD, where he studied comparative phylogeography and systematics in Penstemon subgenus Dasanthera. Ben's research focuses on hybridization and transitions to hummingbird pollination in the Dasanthera clade of Penstemon. Outside of the lab, Ben likes exploring nature and playing music. Ben joined the lab in the Fall of 2021. Ben will be starting as an Assistant Professor in Fall 2025 at Mississippi State University!
-
-[Stone Lab at MSU!](https://benstemon.github.io)
-
-<!-- body text about the person (size set in style.css)-->
-
-<br><br><br><br>
 
 ***
-<img src="images/Aidan.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Aidan.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
 <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
 
@@ -84,25 +69,25 @@ Aidan is an NSF Postdoc Fellow in the lab studying how divergent pollinator adap
 <br><br><br><br>
 
 ***
-<img src="images/Josh.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<img src="images/brooke.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
 <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
 
 <br>
 <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)-->
 
-#### Josh Stevens 
+#### Brooke Kern
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
 
-Josh is a PhD student in the lab. He obtained his undergraduate degree at Keene State College. Josh's research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology & bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the Fall of 2020. 
+Brooke is a postdoc in the lab since October 2025. She has a BS in biology from U. Montana and completed her PhD in Dave Moeller's lab at the U. Minnesota in September of 2025, where she studied how differences in mating system contribute to reproductive isolation in a pair of Clarkia taxa. Brooke now studies the hybrid swarm Penstemon x jonesii and the dynamics of gene flow and selection among these hybrids and their parent species. Outside the lab, she enjoys playing Dungeons & Dragons, reading, and knitting.
 
 
-<!-- body text about the person (size set in style.css)-->
 <br><br><br><br>
+
 
 ***
 
-<img src="images/Trinity3.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Trinity3.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
 
 <br>
 
@@ -121,7 +106,7 @@ Trinity joined the lab as a PhD student in the fall of 2020, and is interested i
 <br>
 
 *** 
-<img src="images/zack.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<img src="images/zack.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
   
 <br>
 
@@ -138,13 +123,47 @@ Zack is a PhD student in the lab. He obtained a BS in Ecology, Evolution, and Be
 <br>
 
 *** 
-<img src="images/Palmer.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<img src="images/Palmer.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
   
 <br>
 
 #### Palmer Lambert
 
 Palmer joined the lab as a technician in fall of 2024. He received a BS in environmental ecology at the University of Dayton. Since graduating, he has worked as a field technician for the USFS, collecting fire ecology data for Morris Johnson of the University of Washington. Palmer has a broad interest in environmental ecology and joined the lab to learn more about evolutionary ecology. His current roles within the lab are developing morphometric approaches to analyze flower shape data, helping to run the lab, and supporting his labmates’ research. Away from lab, he enjoys hiking, hunting, fishing, and crocheting.
+
+<br>
+
+<br>
+
+<br>
+
+*** 
+<img src="images/marly.2.jpeg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+  
+<br>
+
+#### Marly Stewart
+
+Marly is an undergraduate student majoring in Biology and English. She joined the lab in the spring of 2025. In the lab, she is currently testing whether bee- vs. hummingbird-adapted penstemon species show differences in pollen:ovule ratios. In her free time, she enjoys reading and music.
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+*** 
+<img src="images/jackson.JPEG" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+  
+<br>
+
+#### Jackson Weinstein
+
+Jackson Weinstein is an undergraduate student in the lab. He currently is majoring in Biological Sciences as the class of 2028 with a broad interest in the plant sciences. In the lab, Jackson investigates the intrapopulation color variation within the Penstemon putus species. Outside of school, he likes playing soccer and being in the great outdoors.
+
+<br>
 
 <br>
 

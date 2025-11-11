@@ -13,12 +13,22 @@
 
 <title>Lab Members - Wessinger Lab</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -29,12 +39,16 @@
 <!-- this styles the head element of the wesbite and is incorporated through the .yml, the code itself makes the shortcut icon (aka the favicon) be an image of type .png that can be found within the local folder images under the name eatonii.png
 IMP: if you want to change this, make sure to save the image you want to change it to as a png, apparently this is better for favicons because they are so small usually -->
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -47,32 +61,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -83,10 +73,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -103,40 +89,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -164,7 +126,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -176,7 +138,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -186,11 +148,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -202,13 +181,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -216,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -269,7 +240,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -300,7 +271,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -311,7 +282,9 @@ $(document).ready(function () {
 
 <!--hello, this is an html comment-->
 <!--the title here NORMALLY controls the big text at the top of this web page as well as the title shown within the tab but I changed that so this title only controls the text within the tab for all .Rmds/.htmls (the change is coded within the in_header.html) because I wanted the information in the tab to say something different than the text at the top of each web page-->
-<p><br> <!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd--> <!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
+<p><br>
+<!-- anything within carrots is html code that will by knitted into the .html output my knitting the .rmd-->
+<!-- br means break and inserts an empty line, i think the size of the break is based on the default size of the body text--></p>
 <div id="lab-members" class="section level1">
 <h1>Lab Members</h1>
 <!-- header 1, aka the large font that is centered at the top of the web page, best to leave a line between headers and other code, otherwise sometimes rmd won't format them correctly -->
@@ -327,83 +300,151 @@ $(document).ready(function () {
 <!-- in this css code block the images called within the rest of this web page (with the html tag "img") are formatted to all be the same size (height:400px; and width:400px; means a square with a height and width of 400 pixels each) with 10 pixels of padding around it (padding: 10px; keeps from the text being too close to it)
 object-fit: cover; defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently -->
 <!-- removing the above code from working bc I want to add in twitter images, this formatting will now be in each image itself instead of above-->
-<p><img src="images/carrie.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+<p><img src="images/carrie.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the LEFT of the screen 
 height=400px and width=400px means a square with a height and width of 400 pixels each
 style = everything that follows after this is css code 
 "padding: 10px; gives 10 pixels of padding around it the image 
 object-fit: cover;" defines how the actual image fits within the image container that is made by the height, width and padding commands above), this ensures that if the raw image is bigger or smaller than the set height and width, it will be resized to take up all available space while maintaining the right aspect ratio, if you don't like how one of the images looks here DO NOT CHANGE THIS instead crop the image differently--></p>
-<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website -->
+<p><br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 <div id="carrie-wessinger" class="section level4">
 <h4>Carrie Wessinger</h4>
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
-<p>Carrie started the lab at the University of South Carolina in the Spring of 2020. She is a native of Portland, Oregon and earned her BS in Biology from Brown University where she gained an appreciation for organismal and evolutionary biology. She then worked with Mark Rausher at Duke University for her PhD and worked with Lena Hileman (and John Kelly) at the University of Kansas for her postdoc, all current collaborators. She is fascinated by the phenomenon of parallel evolution. Outside of work, she loves exploring Columbia and the natural beauty of South Carolina. <!-- body text about the person (size set in style.css)--></p>
+<p>Carrie started the lab at the University of South Carolina in the
+Spring of 2020. She is a native of Portland, Oregon and earned her BS in
+Biology from Brown University where she gained an appreciation for
+organismal and evolutionary biology. She then worked with Mark Rausher
+at Duke University for her PhD and worked with Lena Hileman (and John
+Kelly) at the University of Kansas for her postdoc, all current
+collaborators. She is fascinated by the phenomenon of parallel
+evolution. Outside of work, she loves exploring Columbia and the natural
+beauty of South Carolina.
+<!-- body text about the person (size set in style.css)--></p>
 <p><a href="pdfs/latest.CV.wessinger.pdf" target="_blank">CV</a></p>
 <p>wessinc[at]mailbox.sc.edu <br></p>
 <!-- after each person I have inserted two separated breaks (takes up more space than 2 together... not sure why) and then the *** which draws a line -->
 <hr />
-<p><img src="images/ben.stone.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+<p><img src="images/Aidan.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website --></p>
-<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
-</div>
-<div id="ben-stone" class="section level4">
-<h4>Ben Stone</h4>
-<!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
-<p>Ben is an NSF Postdoc Fellow in the lab. He received his BS in Evolution, Ecology, and Organismal Biology at The Ohio State University. He stayed at OSU to work with Andi Wolfe for his PhD, where he studied comparative phylogeography and systematics in Penstemon subgenus Dasanthera. Ben’s research focuses on hybridization and transitions to hummingbird pollination in the Dasanthera clade of Penstemon. Outside of the lab, Ben likes exploring nature and playing music. Ben joined the lab in the Fall of 2021. Ben will be starting as an Assistant Professor in Fall 2025 at Mississippi State University!</p>
-<p><a href="https://benstemon.github.io">Stone Lab at MSU!</a></p>
-<!-- body text about the person (size set in style.css)-->
-<p><br><br><br><br></p>
-<hr />
-<p><img src="images/Aidan.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
-align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website --></p>
-<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<p><br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 </div>
 <div id="aidan-short" class="section level4">
 <h4>Aidan Short</h4>
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
-<p>Aidan is an NSF Postdoc Fellow in the lab studying how divergent pollinator adaptation contributes to genome divergence and speciation. To do this he is analyzing patterns of selection and gene flow between the sister species Penstemon barbatus and virgatus, and is also performing simulations of pollinator isolation. Aidan developed an interest in speciation as a PhD student in Matt Streisfeld’s lab where he studied the outcomes of hybridization within the Mimulus aurantiacus species complex. Outside of the lab, he enjoys spending time with his wife and son. He joined the lab in January 2025.</p>
+<p>Aidan is an NSF Postdoc Fellow in the lab studying how divergent
+pollinator adaptation contributes to genome divergence and speciation.
+To do this he is analyzing patterns of selection and gene flow between
+the sister species Penstemon barbatus and virgatus, and is also
+performing simulations of pollinator isolation. Aidan developed an
+interest in speciation as a PhD student in Matt Streisfeld’s lab where
+he studied the outcomes of hybridization within the Mimulus aurantiacus
+species complex. Outside of the lab, he enjoys spending time with his
+wife and son. He joined the lab in January 2025.</p>
 <p><br><br><br><br></p>
 <hr />
-<p><img src="images/Josh.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"> <!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
+<p><img src="images/brooke.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover">
+<!-- this is html that calls the container "img" (styled above in css) and fills it with the image linked within the src="path/to/img/from/rproj/dir"
 align="left" aligns this image to the RIGHT of the screen, this is different than the image above and makes the alternating pattern currently seen on the website --></p>
-<p><br> <!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
+<p><br>
+<!-- for each person, I currently have set the image (see above) then one break (this line) then their name as a h4 (see below)--></p>
 </div>
-<div id="josh-stevens" class="section level4">
-<h4>Josh Stevens</h4>
+<div id="brooke-kern" class="section level4">
+<h4>Brooke Kern</h4>
 <!-- 4 hastags mean this is a header of size h4, the fourth biggest (size set in style.css), this size is currently consistent for all people's names within this page-->
-<p>Josh is a PhD student in the lab. He obtained his undergraduate degree at Keene State College. Josh’s research focuses on gene flow and mating patterns within various species of Penstemon. He is broadly interested in evolutionary ecology &amp; bioinformatics. He enjoys hiking, kayaking, and exploring new areas. Josh joined the Wessinger lab in the Fall of 2020.</p>
-<!-- body text about the person (size set in style.css)-->
+<p>Brooke is a postdoc in the lab since October 2025. She has a BS in
+biology from U. Montana and completed her PhD in Dave Moeller’s lab at
+the U. Minnesota in September of 2025, where she studied how differences
+in mating system contribute to reproductive isolation in a pair of
+Clarkia taxa. Brooke now studies the hybrid swarm Penstemon x jonesii
+and the dynamics of gene flow and selection among these hybrids and
+their parent species. Outside the lab, she enjoys playing Dungeons &amp;
+Dragons, reading, and knitting.</p>
 <p><br><br><br><br></p>
 <hr />
-<p><img src="images/Trinity3.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"></p>
+<p><img src="images/Trinity3.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"></p>
 <p><br></p>
 </div>
 <div id="trinity-depatie" class="section level4">
 <h4>Trinity Depatie</h4>
-<p>Trinity joined the lab as a PhD student in the fall of 2020, and is interested in the evolution of floral morphological traits. Her dissertation focuses on the ecological function and genetic basis of personate flowers in Penstemon’s eastern clade (sect. Penstemon). Outside of lab, Trinity likes baking, hiking, and riding horses.</p>
+<p>Trinity joined the lab as a PhD student in the fall of 2020, and is
+interested in the evolution of floral morphological traits. Her
+dissertation focuses on the ecological function and genetic basis of
+personate flowers in Penstemon’s eastern clade (sect. Penstemon).
+Outside of lab, Trinity likes baking, hiking, and riding horses.</p>
 <p><a href="https://www.trinityhdepatie.com">Trinity’s website</a></p>
 <p><br></p>
 <p><br></p>
 <p><br></p>
 <p><br></p>
 <hr />
-<p><img src="images/zack.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"></p>
+<p><img src="images/zack.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"></p>
 <p><br></p>
 </div>
 <div id="zack-radford" class="section level4">
 <h4>Zack Radford</h4>
-<p>Zack is a PhD student in the lab. He obtained a BS in Ecology, Evolution, and Behavior at the University of Minnesota. He then worked as a lab technician for Dave Moeller and Ya Yang working on several different projects related to dispersal, adaptation, complex traits, and metabolite evolution. Zack’s research involves investigating the basis for complex trait evolution in Penstemon, particularly flower color polymorphism in Penstemon whippleanus. In his free time he enjoys backpacking, music, and long walks on scree.</p>
+<p>Zack is a PhD student in the lab. He obtained a BS in Ecology,
+Evolution, and Behavior at the University of Minnesota. He then worked
+as a lab technician for Dave Moeller and Ya Yang working on several
+different projects related to dispersal, adaptation, complex traits, and
+metabolite evolution. Zack’s research involves investigating the basis
+for complex trait evolution in Penstemon, particularly flower color
+polymorphism in Penstemon whippleanus. In his free time he enjoys
+backpacking, music, and long walks on scree.</p>
 <p><br></p>
 <p><br></p>
 <p><br></p>
 <p><br></p>
 <hr />
-<p><img src="images/Palmer.jpg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"></p>
+<p><img src="images/Palmer.jpg" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"></p>
 <p><br></p>
 </div>
 <div id="palmer-lambert" class="section level4">
 <h4>Palmer Lambert</h4>
-<p>Palmer joined the lab as a technician in fall of 2024. He received a BS in environmental ecology at the University of Dayton. Since graduating, he has worked as a field technician for the USFS, collecting fire ecology data for Morris Johnson of the University of Washington. Palmer has a broad interest in environmental ecology and joined the lab to learn more about evolutionary ecology. His current roles within the lab are developing morphometric approaches to analyze flower shape data, helping to run the lab, and supporting his labmates’ research. Away from lab, he enjoys hiking, hunting, fishing, and crocheting.</p>
+<p>Palmer joined the lab as a technician in fall of 2024. He received a
+BS in environmental ecology at the University of Dayton. Since
+graduating, he has worked as a field technician for the USFS, collecting
+fire ecology data for Morris Johnson of the University of Washington.
+Palmer has a broad interest in environmental ecology and joined the lab
+to learn more about evolutionary ecology. His current roles within the
+lab are developing morphometric approaches to analyze flower shape data,
+helping to run the lab, and supporting his labmates’ research. Away from
+lab, he enjoys hiking, hunting, fishing, and crocheting.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<hr />
+<p><img src="images/marly.2.jpeg" width="400px" height="400px" align="right" style= "padding: 10px; object-fit: cover"></p>
+<p><br></p>
+</div>
+<div id="marly-stewart" class="section level4">
+<h4>Marly Stewart</h4>
+<p>Marly is an undergraduate student majoring in Biology and English.
+She joined the lab in the spring of 2025. In the lab, she is currently
+testing whether bee- vs. hummingbird-adapted penstemon species show
+differences in pollen:ovule ratios. In her free time, she enjoys reading
+and music.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<hr />
+<p><img src="images/jackson.JPEG" width="400px" height="400px" align="left" style= "padding: 10px; object-fit: cover"></p>
+<p><br></p>
+</div>
+<div id="jackson-weinstein" class="section level4">
+<h4>Jackson Weinstein</h4>
+<p>Jackson Weinstein is an undergraduate student in the lab. He
+currently is majoring in Biological Sciences as the class of 2028 with a
+broad interest in the plant sciences. In the lab, Jackson investigates
+the intrapopulation color variation within the Penstemon putus species.
+Outside of school, he likes playing soccer and being in the great
+outdoors.</p>
 <p><br></p>
 <p><br></p>
 <p><br></p>
@@ -412,8 +453,10 @@ align="left" aligns this image to the RIGHT of the screen, this is different tha
 </div>
 <div id="lab-alumni" class="section level1">
 <h1>Lab Alumni</h1>
-<div id="click-here-to-meet-our-former-lab-members" class="section level4">
-<h4><a href="./alumni_people.html">Click here to meet our former lab members!</a></h4>
+<div id="click-here-to-meet-our-former-lab-members"
+class="section level4">
+<h4><a href="./alumni_people.html">Click here to meet our former lab
+members!</a></h4>
 </div>
 </div>
 
@@ -426,7 +469,7 @@ align="left" aligns this image to the RIGHT of the screen, this is different tha
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -444,7 +487,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
